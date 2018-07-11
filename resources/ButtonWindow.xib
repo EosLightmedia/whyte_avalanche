@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9059"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ButtonWindowController">
+            <connections>
+                <outlet property="analog_1_id_field" destination="web-9B-c3f" id="Jap-31-hW9"/>
+                <outlet property="analog_2_id_field" destination="1po-Yk-z3o" id="6vh-i4-IgU"/>
+                <outlet property="phidget_id_field" destination="OnY-ok-bqt" id="CA0-vk-xHu"/>
+                <outlet property="window" destination="qOO-9m-8aD" id="vzz-dD-IgT"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" oneShot="NO" showsToolbarButton="NO" animationBehavior="default" id="qOO-9m-8aD">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="480" height="316"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1178"/>
+            <view key="contentView" id="YLS-Nh-Xvx">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="316"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="lvC-sd-V2O">
+                        <rect key="frame" x="91" y="215" width="68" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="phidget_id" id="MRO-fy-Msl">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="OnY-ok-bqt">
+                        <rect key="frame" x="209" y="212" width="96" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="M0S-DW-tcz">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="2lN-H9-PRq" name="value" keyPath="values.ip_address" id="g9z-ie-3Dl"/>
+                        </connections>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="adu-wX-yGT">
+                        <rect key="frame" x="91" y="185" width="72" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="analog_1_id" id="Vn8-Yg-C2o">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="web-9B-c3f">
+                        <rect key="frame" x="209" y="182" width="96" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="r2h-BB-DQF">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="2lN-H9-PRq" name="value" keyPath="values.port" id="33U-IZ-qqV"/>
+                        </connections>
+                    </textField>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="kgB-tu-PBA">
+                        <rect key="frame" x="12" y="253" width="123" height="48"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="eos" id="Cxc-Zo-95R"/>
+                    </imageView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="QWg-Oj-bDW">
+                        <rect key="frame" x="91" y="158" width="76" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="analog_2_id" id="ubr-sW-ueG">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1po-Yk-z3o">
+                        <rect key="frame" x="209" y="155" width="96" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="kI5-zj-rcf">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="2lN-H9-PRq" name="value" keyPath="values.port" id="UpS-8H-AA9"/>
+                        </connections>
+                    </textField>
+                    <button verticalHuggingPriority="750" id="pP8-oO-YMJ">
+                        <rect key="frame" x="201" y="114" width="113" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <buttonCell key="cell" type="push" title="Save Values" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="avM-89-GDz">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="save_values:" target="-2" id="N6z-PF-q0x"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <animations/>
+            </view>
+            <point key="canvasLocation" x="340" y="485"/>
+        </window>
+        <userDefaultsController representsSharedInstance="YES" id="2lN-H9-PRq"/>
+    </objects>
+    <resources>
+        <image name="eos" width="391.92001342773438" height="129.83999633789062"/>
+    </resources>
+</document>

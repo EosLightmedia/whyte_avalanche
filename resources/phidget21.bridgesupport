@@ -1,0 +1,2792 @@
+<?xml version='1.0'?>
+<signatures version='1.0'>
+<struct type='{_CPhidgetIR_CodeInfo=&quot;bitCount&quot;i&quot;encoding&quot;i&quot;length&quot;i&quot;gap&quot;i&quot;trail&quot;i&quot;header&quot;[2i]&quot;one&quot;[2i]&quot;zero&quot;[2i]&quot;repeat&quot;[26i]&quot;min_repeat&quot;i&quot;toggle_mask&quot;[16C]&quot;carrierFrequency&quot;i&quot;dutyCycle&quot;i}' name='CPhidgetIR_CodeInfo'>
+<field declared_type='int' type='i' name='bitCount'/>
+<field declared_type='CPhidgetIR_Encoding' type='i' name='encoding'/>
+<field declared_type='CPhidgetIR_Length' type='i' name='length'/>
+<field declared_type='int' type='i' name='gap'/>
+<field declared_type='int' type='i' name='trail'/>
+<field declared_type='int*' type='[2i]' name='header'/>
+<field declared_type='int*' type='[2i]' name='one'/>
+<field declared_type='int*' type='[2i]' name='zero'/>
+<field declared_type='int*' type='[26i]' name='repeat'/>
+<field declared_type='int' type='i' name='min_repeat'/>
+<field declared_type='unsigned char*' type='[16C]' name='toggle_mask'/>
+<field declared_type='int' type='i' name='carrierFrequency'/>
+<field declared_type='int' type='i' name='dutyCycle'/>
+</struct>
+<struct type='{_CPhidgetIR_CodeInfo=&quot;bitCount&quot;i&quot;encoding&quot;i&quot;length&quot;i&quot;gap&quot;i&quot;trail&quot;i&quot;header&quot;[2i]&quot;one&quot;[2i]&quot;zero&quot;[2i]&quot;repeat&quot;[26i]&quot;min_repeat&quot;i&quot;toggle_mask&quot;[16C]&quot;carrierFrequency&quot;i&quot;dutyCycle&quot;i}' name='CPhidgetIR_CodeInfoHandle'>
+<field declared_type='int' type='i' name='bitCount'/>
+<field declared_type='CPhidgetIR_Encoding' type='i' name='encoding'/>
+<field declared_type='CPhidgetIR_Length' type='i' name='length'/>
+<field declared_type='int' type='i' name='gap'/>
+<field declared_type='int' type='i' name='trail'/>
+<field declared_type='int*' type='[2i]' name='header'/>
+<field declared_type='int*' type='[2i]' name='one'/>
+<field declared_type='int*' type='[2i]' name='zero'/>
+<field declared_type='int*' type='[26i]' name='repeat'/>
+<field declared_type='int' type='i' name='min_repeat'/>
+<field declared_type='unsigned char*' type='[16C]' name='toggle_mask'/>
+<field declared_type='int' type='i' name='carrierFrequency'/>
+<field declared_type='int' type='i' name='dutyCycle'/>
+</struct>
+<struct type='{_CPhidgetSpatial_SpatialEventData=&quot;acceleration&quot;[3d]&quot;angularRate&quot;[3d]&quot;magneticField&quot;[3d]&quot;timestamp&quot;{_CPhidget_Timestamp=&quot;seconds&quot;i&quot;microseconds&quot;i}}' name='CPhidgetSpatial_SpatialEventData'>
+<field declared_type='double*' type='[3d]' name='acceleration'/>
+<field declared_type='double*' type='[3d]' name='angularRate'/>
+<field declared_type='double*' type='[3d]' name='magneticField'/>
+<field declared_type='CPhidget_Timestamp' type='{_CPhidget_Timestamp=&quot;seconds&quot;i&quot;microseconds&quot;i}' name='timestamp'/>
+</struct>
+<struct type='{_CPhidgetSpatial_SpatialEventData=&quot;acceleration&quot;[3d]&quot;angularRate&quot;[3d]&quot;magneticField&quot;[3d]&quot;timestamp&quot;{_CPhidget_Timestamp=&quot;seconds&quot;i&quot;microseconds&quot;i}}' name='CPhidgetSpatial_SpatialEventDataHandle'>
+<field declared_type='double*' type='[3d]' name='acceleration'/>
+<field declared_type='double*' type='[3d]' name='angularRate'/>
+<field declared_type='double*' type='[3d]' name='magneticField'/>
+<field declared_type='CPhidget_Timestamp' type='{_CPhidget_Timestamp=&quot;seconds&quot;i&quot;microseconds&quot;i}' name='timestamp'/>
+</struct>
+<struct type='{_CPhidget_Timestamp=&quot;seconds&quot;i&quot;microseconds&quot;i}' name='CPhidget_Timestamp'>
+<field declared_type='int' type='i' name='seconds'/>
+<field declared_type='int' type='i' name='microseconds'/>
+</struct>
+<struct type='{_CPhidget_Timestamp=&quot;seconds&quot;i&quot;microseconds&quot;i}' name='CPhidget_TimestampHandle'>
+<field declared_type='int' type='i' name='seconds'/>
+<field declared_type='int' type='i' name='microseconds'/>
+</struct>
+<struct type='{__GPGGA=&quot;time&quot;{__GPSTime=&quot;tm_ms&quot;s&quot;tm_sec&quot;s&quot;tm_min&quot;s&quot;tm_hour&quot;s}&quot;latitude&quot;d&quot;longitude&quot;d&quot;fixQuality&quot;s&quot;numSatellites&quot;s&quot;horizontalDilution&quot;d&quot;altitude&quot;d&quot;heightOfGeoid&quot;d}' name='GPGGA'>
+<field declared_type='GPSTime' type='{__GPSTime=&quot;tm_ms&quot;s&quot;tm_sec&quot;s&quot;tm_min&quot;s&quot;tm_hour&quot;s}' name='time'/>
+<field declared_type='double' type='d' name='latitude'/>
+<field declared_type='double' type='d' name='longitude'/>
+<field declared_type='short' type='s' name='fixQuality'/>
+<field declared_type='short' type='s' name='numSatellites'/>
+<field declared_type='double' type='d' name='horizontalDilution'/>
+<field declared_type='double' type='d' name='altitude'/>
+<field declared_type='double' type='d' name='heightOfGeoid'/>
+</struct>
+<struct type='{__GPGSA=&quot;mode&quot;c&quot;fixType&quot;s&quot;satUsed&quot;[12s]&quot;posnDilution&quot;d&quot;horizDilution&quot;d&quot;vertDilution&quot;d}' name='GPGSA'>
+<field declared_type='char' type='c' name='mode'/>
+<field declared_type='short' type='s' name='fixType'/>
+<field declared_type='short*' type='[12s]' name='satUsed'/>
+<field declared_type='double' type='d' name='posnDilution'/>
+<field declared_type='double' type='d' name='horizDilution'/>
+<field declared_type='double' type='d' name='vertDilution'/>
+</struct>
+<struct type='{__GPGSV=&quot;satsInView&quot;s&quot;satInfo&quot;[12{__GPSSatInfo=&quot;ID&quot;s&quot;elevation&quot;s&quot;azimuth&quot;i&quot;SNR&quot;s}]}' name='GPGSV'>
+<field declared_type='short' type='s' name='satsInView'/>
+<field declared_type='GPSSatInfo*' type='[12{__GPSSatInfo=&quot;ID&quot;s&quot;elevation&quot;s&quot;azimuth&quot;i&quot;SNR&quot;s}]' name='satInfo'/>
+</struct>
+<struct type='{__GPRMC=&quot;time&quot;{__GPSTime=&quot;tm_ms&quot;s&quot;tm_sec&quot;s&quot;tm_min&quot;s&quot;tm_hour&quot;s}&quot;status&quot;c&quot;latitude&quot;d&quot;longitude&quot;d&quot;speedKnots&quot;d&quot;heading&quot;d&quot;date&quot;{__GPSDate=&quot;tm_mday&quot;s&quot;tm_mon&quot;s&quot;tm_year&quot;s}&quot;magneticVariation&quot;d&quot;mode&quot;c}' name='GPRMC'>
+<field declared_type='GPSTime' type='{__GPSTime=&quot;tm_ms&quot;s&quot;tm_sec&quot;s&quot;tm_min&quot;s&quot;tm_hour&quot;s}' name='time'/>
+<field declared_type='char' type='c' name='status'/>
+<field declared_type='double' type='d' name='latitude'/>
+<field declared_type='double' type='d' name='longitude'/>
+<field declared_type='double' type='d' name='speedKnots'/>
+<field declared_type='double' type='d' name='heading'/>
+<field declared_type='GPSDate' type='{__GPSDate=&quot;tm_mday&quot;s&quot;tm_mon&quot;s&quot;tm_year&quot;s}' name='date'/>
+<field declared_type='double' type='d' name='magneticVariation'/>
+<field declared_type='char' type='c' name='mode'/>
+</struct>
+<struct type='{__GPSDate=&quot;tm_mday&quot;s&quot;tm_mon&quot;s&quot;tm_year&quot;s}' name='GPSDate'>
+<field declared_type='short' type='s' name='tm_mday'/>
+<field declared_type='short' type='s' name='tm_mon'/>
+<field declared_type='short' type='s' name='tm_year'/>
+</struct>
+<struct type='{__GPSSatInfo=&quot;ID&quot;s&quot;elevation&quot;s&quot;azimuth&quot;i&quot;SNR&quot;s}' name='GPSSatInfo'>
+<field declared_type='short' type='s' name='ID'/>
+<field declared_type='short' type='s' name='elevation'/>
+<field declared_type='int' type='i' name='azimuth'/>
+<field declared_type='short' type='s' name='SNR'/>
+</struct>
+<struct type='{__GPSTime=&quot;tm_ms&quot;s&quot;tm_sec&quot;s&quot;tm_min&quot;s&quot;tm_hour&quot;s}' name='GPSTime'>
+<field declared_type='short' type='s' name='tm_ms'/>
+<field declared_type='short' type='s' name='tm_sec'/>
+<field declared_type='short' type='s' name='tm_min'/>
+<field declared_type='short' type='s' name='tm_hour'/>
+</struct>
+<struct type='{__GPVTG=&quot;trueHeading&quot;d&quot;magneticHeading&quot;d&quot;speedKnots&quot;d&quot;speed&quot;d&quot;mode&quot;c}' name='GPVTG'>
+<field declared_type='double' type='d' name='trueHeading'/>
+<field declared_type='double' type='d' name='magneticHeading'/>
+<field declared_type='double' type='d' name='speedKnots'/>
+<field declared_type='double' type='d' name='speed'/>
+<field declared_type='char' type='c' name='mode'/>
+</struct>
+<struct type='{__NMEAData=&quot;GGA&quot;{__GPGGA=&quot;time&quot;{__GPSTime=&quot;tm_ms&quot;s&quot;tm_sec&quot;s&quot;tm_min&quot;s&quot;tm_hour&quot;s}&quot;latitude&quot;d&quot;longitude&quot;d&quot;fixQuality&quot;s&quot;numSatellites&quot;s&quot;horizontalDilution&quot;d&quot;altitude&quot;d&quot;heightOfGeoid&quot;d}&quot;GSA&quot;{__GPGSA=&quot;mode&quot;c&quot;fixType&quot;s&quot;satUsed&quot;[12s]&quot;posnDilution&quot;d&quot;horizDilution&quot;d&quot;vertDilution&quot;d}&quot;GSV&quot;{__GPGSV=&quot;satsInView&quot;s&quot;satInfo&quot;[12{__GPSSatInfo=&quot;ID&quot;s&quot;elevation&quot;s&quot;azimuth&quot;i&quot;SNR&quot;s}]}&quot;RMC&quot;{__GPRMC=&quot;time&quot;{__GPSTime=&quot;tm_ms&quot;s&quot;tm_sec&quot;s&quot;tm_min&quot;s&quot;tm_hour&quot;s}&quot;status&quot;c&quot;latitude&quot;d&quot;longitude&quot;d&quot;speedKnots&quot;d&quot;heading&quot;d&quot;date&quot;{__GPSDate=&quot;tm_mday&quot;s&quot;tm_mon&quot;s&quot;tm_year&quot;s}&quot;magneticVariation&quot;d&quot;mode&quot;c}&quot;VTG&quot;{__GPVTG=&quot;trueHeading&quot;d&quot;magneticHeading&quot;d&quot;speedKnots&quot;d&quot;speed&quot;d&quot;mode&quot;c}}' name='NMEAData'>
+<field declared_type='GPGGA' type='{__GPGGA=&quot;time&quot;{__GPSTime=&quot;tm_ms&quot;s&quot;tm_sec&quot;s&quot;tm_min&quot;s&quot;tm_hour&quot;s}&quot;latitude&quot;d&quot;longitude&quot;d&quot;fixQuality&quot;s&quot;numSatellites&quot;s&quot;horizontalDilution&quot;d&quot;altitude&quot;d&quot;heightOfGeoid&quot;d}' name='GGA'/>
+<field declared_type='GPGSA' type='{__GPGSA=&quot;mode&quot;c&quot;fixType&quot;s&quot;satUsed&quot;[12s]&quot;posnDilution&quot;d&quot;horizDilution&quot;d&quot;vertDilution&quot;d}' name='GSA'/>
+<field declared_type='GPGSV' type='{__GPGSV=&quot;satsInView&quot;s&quot;satInfo&quot;[12{__GPSSatInfo=&quot;ID&quot;s&quot;elevation&quot;s&quot;azimuth&quot;i&quot;SNR&quot;s}]}' name='GSV'/>
+<field declared_type='GPRMC' type='{__GPRMC=&quot;time&quot;{__GPSTime=&quot;tm_ms&quot;s&quot;tm_sec&quot;s&quot;tm_min&quot;s&quot;tm_hour&quot;s}&quot;status&quot;c&quot;latitude&quot;d&quot;longitude&quot;d&quot;speedKnots&quot;d&quot;heading&quot;d&quot;date&quot;{__GPSDate=&quot;tm_mday&quot;s&quot;tm_mon&quot;s&quot;tm_year&quot;s}&quot;magneticVariation&quot;d&quot;mode&quot;c}' name='RMC'/>
+<field declared_type='GPVTG' type='{__GPVTG=&quot;trueHeading&quot;d&quot;magneticHeading&quot;d&quot;speedKnots&quot;d&quot;speed&quot;d&quot;mode&quot;c}' name='VTG'/>
+</struct>
+<opaque type='^{_CPhidgetAccelerometer=}' name='CPhidgetAccelerometerHandle'/>
+<opaque type='^{_CPhidgetAdvancedServo=}' name='CPhidgetAdvancedServoHandle'/>
+<opaque type='^{_CPhidgetAnalog=}' name='CPhidgetAnalogHandle'/>
+<opaque type='^{_CPhidgetBridge=}' name='CPhidgetBridgeHandle'/>
+<opaque type='^{_CPhidgetDictionary=}' name='CPhidgetDictionaryHandle'/>
+<opaque type='^{_CPhidgetDictionaryListener=}' name='CPhidgetDictionaryListenerHandle'/>
+<opaque type='^{_CPhidgetEncoder=}' name='CPhidgetEncoderHandle'/>
+<opaque type='^{_CPhidgetFrequencyCounter=}' name='CPhidgetFrequencyCounterHandle'/>
+<opaque type='^{_CPhidgetGPS=}' name='CPhidgetGPSHandle'/>
+<opaque type='^{_CPhidget=}' name='CPhidgetHandle'/>
+<opaque type='^{_CPhidgetIR=}' name='CPhidgetIRHandle'/>
+<opaque type='^{_CPhidgetInterfaceKit=}' name='CPhidgetInterfaceKitHandle'/>
+<opaque type='^{_CPhidgetLED=}' name='CPhidgetLEDHandle'/>
+<opaque type='^{_CPhidgetManager=}' name='CPhidgetManagerHandle'/>
+<opaque type='^{_CPhidgetMotorControl=}' name='CPhidgetMotorControlHandle'/>
+<opaque type='^{_CPhidgetPHSensor=}' name='CPhidgetPHSensorHandle'/>
+<opaque type='^{_CPhidgetRFID=}' name='CPhidgetRFIDHandle'/>
+<opaque type='^{_CPhidgetServo=}' name='CPhidgetServoHandle'/>
+<opaque type='^{_CPhidgetSpatial=}' name='CPhidgetSpatialHandle'/>
+<opaque type='^{_CPhidgetStepper=}' name='CPhidgetStepperHandle'/>
+<opaque type='^{_CPhidgetTemperatureSensor=}' name='CPhidgetTemperatureSensorHandle'/>
+<opaque type='^{_CPhidgetTextLCD=}' name='CPhidgetTextLCDHandle'/>
+<opaque type='^{_CPhidgetTextLED=}' name='CPhidgetTextLEDHandle'/>
+<opaque type='^{_CPhidgetWeightSensor=}' name='CPhidgetWeightSensorHandle'/>
+<enum value='32770' name='EEPHIDGET_BADPASSWORD'/>
+<enum value='36872' name='EEPHIDGET_BADPOWER'/>
+<enum value='32771' name='EEPHIDGET_BADVERSION'/>
+<enum value='32769' name='EEPHIDGET_NETWORK'/>
+<enum value='36864' name='EEPHIDGET_OK'/>
+<enum value='36871' name='EEPHIDGET_OUTOFRANGE'/>
+<enum value='36870' name='EEPHIDGET_OVERCURRENT'/>
+<enum value='36866' name='EEPHIDGET_OVERRUN'/>
+<enum value='36869' name='EEPHIDGET_OVERTEMP'/>
+<enum value='36867' name='EEPHIDGET_PACKETLOST'/>
+<enum value='36868' name='EEPHIDGET_WRAP'/>
+<enum value='10' name='EPHIDGET_BADPASSWORD'/>
+<enum value='19' name='EPHIDGET_BADVERSION'/>
+<enum value='18' name='EPHIDGET_CLOSED'/>
+<enum value='12' name='EPHIDGET_DUPLICATE'/>
+<enum value='15' name='EPHIDGET_EVENT'/>
+<enum value='6' name='EPHIDGET_INTERRUPTED'/>
+<enum value='7' name='EPHIDGET_INVALID'/>
+<enum value='4' name='EPHIDGET_INVALIDARG'/>
+<enum value='8' name='EPHIDGET_NETWORK'/>
+<enum value='16' name='EPHIDGET_NETWORK_NOTCONNECTED'/>
+<enum value='2' name='EPHIDGET_NOMEMORY'/>
+<enum value='5' name='EPHIDGET_NOTATTACHED'/>
+<enum value='1' name='EPHIDGET_NOTFOUND'/>
+<enum value='0' name='EPHIDGET_OK'/>
+<enum value='14' name='EPHIDGET_OUTOFBOUNDS'/>
+<enum value='13' name='EPHIDGET_TIMEOUT'/>
+<enum value='3' name='EPHIDGET_UNEXPECTED'/>
+<enum value='9' name='EPHIDGET_UNKNOWNVAL'/>
+<enum value='11' name='EPHIDGET_UNSUPPORTED'/>
+<enum value='17' name='EPHIDGET_WRONGDEVICE'/>
+<enum value='0' name='PFALSE'/>
+<enum value='2' name='PHIDCLASS_ACCELEROMETER'/>
+<enum value='3' name='PHIDCLASS_ADVANCEDSERVO'/>
+<enum value='22' name='PHIDCLASS_ANALOG'/>
+<enum value='23' name='PHIDCLASS_BRIDGE'/>
+<enum value='4' name='PHIDCLASS_ENCODER'/>
+<enum value='21' name='PHIDCLASS_FREQUENCYCOUNTER'/>
+<enum value='5' name='PHIDCLASS_GPS'/>
+<enum value='7' name='PHIDCLASS_INTERFACEKIT'/>
+<enum value='19' name='PHIDCLASS_IR'/>
+<enum value='8' name='PHIDCLASS_LED'/>
+<enum value='9' name='PHIDCLASS_MOTORCONTROL'/>
+<enum value='10' name='PHIDCLASS_PHSENSOR'/>
+<enum value='11' name='PHIDCLASS_RFID'/>
+<enum value='12' name='PHIDCLASS_SERVO'/>
+<enum value='20' name='PHIDCLASS_SPATIAL'/>
+<enum value='13' name='PHIDCLASS_STEPPER'/>
+<enum value='14' name='PHIDCLASS_TEMPERATURESENSOR'/>
+<enum value='15' name='PHIDCLASS_TEXTLCD'/>
+<enum value='16' name='PHIDCLASS_TEXTLED'/>
+<enum value='17' name='PHIDCLASS_WEIGHTSENSOR'/>
+<enum value='1' name='PHIDGET_ATTACHED'/>
+<enum value='1' name='PHIDGET_BRIDGE_GAIN_1'/>
+<enum value='6' name='PHIDGET_BRIDGE_GAIN_128'/>
+<enum value='3' name='PHIDGET_BRIDGE_GAIN_16'/>
+<enum value='4' name='PHIDGET_BRIDGE_GAIN_32'/>
+<enum value='5' name='PHIDGET_BRIDGE_GAIN_64'/>
+<enum value='2' name='PHIDGET_BRIDGE_GAIN_8'/>
+<enum value='7' name='PHIDGET_BRIDGE_GAIN_UNKNOWN'/>
+<enum value='4' name='PHIDGET_DICTIONARY_CURRENT_VALUE'/>
+<enum value='2' name='PHIDGET_DICTIONARY_ENTRY_ADDED'/>
+<enum value='3' name='PHIDGET_DICTIONARY_ENTRY_REMOVING'/>
+<enum value='1' name='PHIDGET_DICTIONARY_VALUE_CHANGED'/>
+<enum value='20' name='PHIDGET_ERROR_CODE_COUNT'/>
+<enum value='2' name='PHIDGET_FREQUENCYCOUNTER_FILTERTYPE_LOGIC_LEVEL'/>
+<enum value='3' name='PHIDGET_FREQUENCYCOUNTER_FILTERTYPE_UNKNOWN'/>
+<enum value='1' name='PHIDGET_FREQUENCYCOUNTER_FILTERTYPE_ZERO_CROSSING'/>
+<enum value='4' name='PHIDGET_IR_ENCODING_BIPHASE'/>
+<enum value='3' name='PHIDGET_IR_ENCODING_PULSE'/>
+<enum value='5' name='PHIDGET_IR_ENCODING_RC5'/>
+<enum value='6' name='PHIDGET_IR_ENCODING_RC6'/>
+<enum value='2' name='PHIDGET_IR_ENCODING_SPACE'/>
+<enum value='1' name='PHIDGET_IR_ENCODING_UNKNOWN'/>
+<enum value='2' name='PHIDGET_IR_LENGTH_CONSTANT'/>
+<enum value='1' name='PHIDGET_IR_LENGTH_UNKNOWN'/>
+<enum value='3' name='PHIDGET_IR_LENGTH_VARIABLE'/>
+<enum value='1' name='PHIDGET_LED_CURRENT_LIMIT_20mA'/>
+<enum value='2' name='PHIDGET_LED_CURRENT_LIMIT_40mA'/>
+<enum value='3' name='PHIDGET_LED_CURRENT_LIMIT_60mA'/>
+<enum value='4' name='PHIDGET_LED_CURRENT_LIMIT_80mA'/>
+<enum value='1' name='PHIDGET_LED_VOLTAGE_1_7V'/>
+<enum value='2' name='PHIDGET_LED_VOLTAGE_2_75V'/>
+<enum value='3' name='PHIDGET_LED_VOLTAGE_3_9V'/>
+<enum value='4' name='PHIDGET_LED_VOLTAGE_5_0V'/>
+<enum value='1' name='PHIDGET_LOG_CRITICAL'/>
+<enum value='4' name='PHIDGET_LOG_DEBUG'/>
+<enum value='2' name='PHIDGET_LOG_ERROR'/>
+<enum value='5' name='PHIDGET_LOG_INFO'/>
+<enum value='6' name='PHIDGET_LOG_VERBOSE'/>
+<enum value='3' name='PHIDGET_LOG_WARNING'/>
+<enum value='0' name='PHIDGET_NOTATTACHED'/>
+<enum value='1' name='PHIDGET_RFID_PROTOCOL_EM4100'/>
+<enum value='2' name='PHIDGET_RFID_PROTOCOL_ISO11785_FDX_B'/>
+<enum value='3' name='PHIDGET_RFID_PROTOCOL_PHIDGETS'/>
+<enum value='1' name='PHIDGET_SERVO_DEFAULT'/>
+<enum value='17' name='PHIDGET_SERVO_FIRGELLI_L12_100_100_06_R'/>
+<enum value='16' name='PHIDGET_SERVO_FIRGELLI_L12_100_50_06_R'/>
+<enum value='13' name='PHIDGET_SERVO_FIRGELLI_L12_30_50_06_R'/>
+<enum value='14' name='PHIDGET_SERVO_FIRGELLI_L12_50_100_06_R'/>
+<enum value='15' name='PHIDGET_SERVO_FIRGELLI_L12_50_210_06_R'/>
+<enum value='5' name='PHIDGET_SERVO_HITEC_805BB'/>
+<enum value='12' name='PHIDGET_SERVO_HITEC_815BB'/>
+<enum value='3' name='PHIDGET_SERVO_HITEC_HS322HD'/>
+<enum value='6' name='PHIDGET_SERVO_HITEC_HS422'/>
+<enum value='10' name='PHIDGET_SERVO_HITEC_HS485HB'/>
+<enum value='4' name='PHIDGET_SERVO_HITEC_HS5245MG'/>
+<enum value='11' name='PHIDGET_SERVO_HITEC_HS645MG'/>
+<enum value='9' name='PHIDGET_SERVO_HITEC_HS785HB'/>
+<enum value='8' name='PHIDGET_SERVO_HITEC_HSR1425CR'/>
+<enum value='2' name='PHIDGET_SERVO_RAW_us_MODE'/>
+<enum value='18' name='PHIDGET_SERVO_SPRINGRC_SM_S2313M'/>
+<enum value='19' name='PHIDGET_SERVO_SPRINGRC_SM_S3317M'/>
+<enum value='20' name='PHIDGET_SERVO_SPRINGRC_SM_S3317SR'/>
+<enum value='21' name='PHIDGET_SERVO_SPRINGRC_SM_S4303R'/>
+<enum value='22' name='PHIDGET_SERVO_SPRINGRC_SM_S4315M'/>
+<enum value='23' name='PHIDGET_SERVO_SPRINGRC_SM_S4315R'/>
+<enum value='24' name='PHIDGET_SERVO_SPRINGRC_SM_S4505B'/>
+<enum value='7' name='PHIDGET_SERVO_TOWERPRO_MG90'/>
+<enum value='25' name='PHIDGET_SERVO_USER_DEFINED'/>
+<enum value='3' name='PHIDGET_TEMPERATURE_SENSOR_E_TYPE'/>
+<enum value='2' name='PHIDGET_TEMPERATURE_SENSOR_J_TYPE'/>
+<enum value='1' name='PHIDGET_TEMPERATURE_SENSOR_K_TYPE'/>
+<enum value='4' name='PHIDGET_TEMPERATURE_SENSOR_T_TYPE'/>
+<enum value='4' name='PHIDGET_TEXTLCD_SCREEN_1x16'/>
+<enum value='10' name='PHIDGET_TEXTLCD_SCREEN_1x40'/>
+<enum value='2' name='PHIDGET_TEXTLCD_SCREEN_1x8'/>
+<enum value='5' name='PHIDGET_TEXTLCD_SCREEN_2x16'/>
+<enum value='7' name='PHIDGET_TEXTLCD_SCREEN_2x20'/>
+<enum value='9' name='PHIDGET_TEXTLCD_SCREEN_2x24'/>
+<enum value='11' name='PHIDGET_TEXTLCD_SCREEN_2x40'/>
+<enum value='3' name='PHIDGET_TEXTLCD_SCREEN_2x8'/>
+<enum value='6' name='PHIDGET_TEXTLCD_SCREEN_4x16'/>
+<enum value='8' name='PHIDGET_TEXTLCD_SCREEN_4x20'/>
+<enum value='12' name='PHIDGET_TEXTLCD_SCREEN_4x40'/>
+<enum value='1' name='PHIDGET_TEXTLCD_SCREEN_NONE'/>
+<enum value='13' name='PHIDGET_TEXTLCD_SCREEN_UNKNOWN'/>
+<enum value='113' name='PHIDID_ACCELEROMETER_2AXIS'/>
+<enum value='126' name='PHIDID_ACCELEROMETER_3AXIS'/>
+<enum value='130' name='PHIDID_ADVANCEDSERVO_1MOTOR'/>
+<enum value='58' name='PHIDID_ADVANCEDSERVO_8MOTOR'/>
+<enum value='55' name='PHIDID_ANALOG_4OUTPUT'/>
+<enum value='123' name='PHIDID_BIPOLAR_STEPPER_1MOTOR'/>
+<enum value='59' name='PHIDID_BRIDGE_4INPUT'/>
+<enum value='75' name='PHIDID_ENCODER_1ENCODER_1INPUT'/>
+<enum value='128' name='PHIDID_ENCODER_HS_1ENCODER'/>
+<enum value='79' name='PHIDID_ENCODER_HS_4ENCODER_4INPUT'/>
+<enum value='152' name='PHIDID_FIRMWARE_UPGRADE'/>
+<enum value='53' name='PHIDID_FREQUENCYCOUNTER_2INPUT'/>
+<enum value='121' name='PHIDID_GPS'/>
+<enum value='64' name='PHIDID_INTERFACEKIT_0_0_4'/>
+<enum value='129' name='PHIDID_INTERFACEKIT_0_0_8'/>
+<enum value='68' name='PHIDID_INTERFACEKIT_0_16_16'/>
+<enum value='83' name='PHIDID_INTERFACEKIT_0_8_8_w_LCD'/>
+<enum value='54' name='PHIDID_INTERFACEKIT_2_2_2'/>
+<enum value='4' name='PHIDID_INTERFACEKIT_4_8_8'/>
+<enum value='69' name='PHIDID_INTERFACEKIT_8_8_8'/>
+<enum value='125' name='PHIDID_INTERFACEKIT_8_8_8_w_LCD'/>
+<enum value='77' name='PHIDID_IR'/>
+<enum value='74' name='PHIDID_LED_64'/>
+<enum value='76' name='PHIDID_LED_64_ADV'/>
+<enum value='118' name='PHIDID_LINEAR_TOUCH'/>
+<enum value='62' name='PHIDID_MOTORCONTROL_1MOTOR'/>
+<enum value='89' name='PHIDID_MOTORCONTROL_HC_2MOTOR'/>
+<enum value='88' name='PHIDID_MOTORCONTROL_LV_2MOTOR_4INPUT'/>
+<enum value='116' name='PHIDID_PHSENSOR'/>
+<enum value='48' name='PHIDID_RFID'/>
+<enum value='49' name='PHIDID_RFID_2OUTPUT'/>
+<enum value='52' name='PHIDID_RFID_2OUTPUT_READ_WRITE'/>
+<enum value='119' name='PHIDID_ROTARY_TOUCH'/>
+<enum value='57' name='PHIDID_SERVO_1MOTOR'/>
+<enum value='2' name='PHIDID_SERVO_1MOTOR_OLD'/>
+<enum value='56' name='PHIDID_SERVO_4MOTOR'/>
+<enum value='3' name='PHIDID_SERVO_4MOTOR_OLD'/>
+<enum value='127' name='PHIDID_SPATIAL_ACCEL_3AXIS'/>
+<enum value='51' name='PHIDID_SPATIAL_ACCEL_GYRO_COMPASS'/>
+<enum value='112' name='PHIDID_TEMPERATURESENSOR'/>
+<enum value='50' name='PHIDID_TEMPERATURESENSOR_4'/>
+<enum value='60' name='PHIDID_TEMPERATURESENSOR_IR'/>
+<enum value='82' name='PHIDID_TEXTLCD_2x20'/>
+<enum value='339' name='PHIDID_TEXTLCD_2x20_w_0_8_8'/>
+<enum value='381' name='PHIDID_TEXTLCD_2x20_w_8_8_8'/>
+<enum value='61' name='PHIDID_TEXTLCD_ADAPTER'/>
+<enum value='73' name='PHIDID_TEXTLED_1x8'/>
+<enum value='72' name='PHIDID_TEXTLED_4x8'/>
+<enum value='122' name='PHIDID_UNIPOLAR_STEPPER_4MOTOR'/>
+<enum value='114' name='PHIDID_WEIGHTSENSOR'/>
+<enum value='3' name='PHIDUID_ACCELEROMETER_2AXIS_10G'/>
+<enum value='2' name='PHIDUID_ACCELEROMETER_2AXIS_2G'/>
+<enum value='4' name='PHIDUID_ACCELEROMETER_2AXIS_5G'/>
+<enum value='5' name='PHIDUID_ACCELEROMETER_3AXIS_3G'/>
+<enum value='6' name='PHIDUID_ADVANCEDSERVO_1MOTOR'/>
+<enum value='7' name='PHIDUID_ADVANCEDSERVO_8MOTOR'/>
+<enum value='9' name='PHIDUID_ADVANCEDSERVO_8MOTOR_CURSENSE_FIX'/>
+<enum value='8' name='PHIDUID_ADVANCEDSERVO_8MOTOR_PGOOD_FLAG'/>
+<enum value='10' name='PHIDUID_ANALOG_4OUTPUT'/>
+<enum value='11' name='PHIDUID_BRIDGE_4INPUT'/>
+<enum value='12' name='PHIDUID_ENCODER_1ENCODER_1INPUT_OLD'/>
+<enum value='13' name='PHIDUID_ENCODER_1ENCODER_1INPUT_v1'/>
+<enum value='14' name='PHIDUID_ENCODER_1ENCODER_1INPUT_v2'/>
+<enum value='15' name='PHIDUID_ENCODER_HS_1ENCODER'/>
+<enum value='16' name='PHIDUID_ENCODER_HS_4ENCODER_4INPUT'/>
+<enum value='81' name='PHIDUID_FIRMWARE_UPGRADE'/>
+<enum value='17' name='PHIDUID_FREQUENCYCOUNTER_2INPUT'/>
+<enum value='80' name='PHIDUID_GENERIC'/>
+<enum value='18' name='PHIDUID_GPS'/>
+<enum value='20' name='PHIDUID_INTERFACEKIT_0_0_4'/>
+<enum value='19' name='PHIDUID_INTERFACEKIT_0_0_4_NO_ECHO'/>
+<enum value='21' name='PHIDUID_INTERFACEKIT_0_0_8'/>
+<enum value='26' name='PHIDUID_INTERFACEKIT_0_16_16'/>
+<enum value='25' name='PHIDUID_INTERFACEKIT_0_16_16_BITBUG'/>
+<enum value='24' name='PHIDUID_INTERFACEKIT_0_16_16_NO_ECHO'/>
+<enum value='22' name='PHIDUID_INTERFACEKIT_0_5_7'/>
+<enum value='23' name='PHIDUID_INTERFACEKIT_0_8_8_w_LCD'/>
+<enum value='27' name='PHIDUID_INTERFACEKIT_2_2_2'/>
+<enum value='28' name='PHIDUID_INTERFACEKIT_2_8_8'/>
+<enum value='29' name='PHIDUID_INTERFACEKIT_4_8_8'/>
+<enum value='31' name='PHIDUID_INTERFACEKIT_8_8_8'/>
+<enum value='32' name='PHIDUID_INTERFACEKIT_8_8_8_FAST'/>
+<enum value='30' name='PHIDUID_INTERFACEKIT_8_8_8_NO_ECHO'/>
+<enum value='34' name='PHIDUID_INTERFACEKIT_8_8_8_w_LCD'/>
+<enum value='35' name='PHIDUID_INTERFACEKIT_8_8_8_w_LCD_FAST'/>
+<enum value='33' name='PHIDUID_INTERFACEKIT_8_8_8_w_LCD_NO_ECHO'/>
+<enum value='37' name='PHIDUID_INTERFACEKIT_TOUCH_ROTARY'/>
+<enum value='36' name='PHIDUID_INTERFACEKIT_TOUCH_SLIDER'/>
+<enum value='38' name='PHIDUID_IR'/>
+<enum value='39' name='PHIDUID_LED_64'/>
+<enum value='40' name='PHIDUID_LED_64_ADV'/>
+<enum value='41' name='PHIDUID_LED_64_ADV_M3'/>
+<enum value='42' name='PHIDUID_MOTORCONTROL_1MOTOR'/>
+<enum value='43' name='PHIDUID_MOTORCONTROL_HC_2MOTOR'/>
+<enum value='44' name='PHIDUID_MOTORCONTROL_LV_2MOTOR_4INPUT'/>
+<enum value='1' name='PHIDUID_NOTHING'/>
+<enum value='45' name='PHIDUID_PHSENSOR'/>
+<enum value='47' name='PHIDUID_RFID'/>
+<enum value='49' name='PHIDUID_RFID_2OUTPUT'/>
+<enum value='48' name='PHIDUID_RFID_2OUTPUT_NO_ECHO'/>
+<enum value='50' name='PHIDUID_RFID_2OUTPUT_READ_WRITE'/>
+<enum value='46' name='PHIDUID_RFID_OLD'/>
+<enum value='54' name='PHIDUID_SERVO_1MOTOR'/>
+<enum value='53' name='PHIDUID_SERVO_1MOTOR_NO_ECHO'/>
+<enum value='51' name='PHIDUID_SERVO_1MOTOR_OLD'/>
+<enum value='56' name='PHIDUID_SERVO_4MOTOR'/>
+<enum value='55' name='PHIDUID_SERVO_4MOTOR_NO_ECHO'/>
+<enum value='52' name='PHIDUID_SERVO_4MOTOR_OLD'/>
+<enum value='58' name='PHIDUID_SPATIAL_ACCEL_3AXIS_1041'/>
+<enum value='59' name='PHIDUID_SPATIAL_ACCEL_3AXIS_1043'/>
+<enum value='57' name='PHIDUID_SPATIAL_ACCEL_3AXIS_1049'/>
+<enum value='62' name='PHIDUID_SPATIAL_ACCEL_GYRO_COMPASS_1042'/>
+<enum value='63' name='PHIDUID_SPATIAL_ACCEL_GYRO_COMPASS_1044'/>
+<enum value='60' name='PHIDUID_SPATIAL_ACCEL_GYRO_COMPASS_1056'/>
+<enum value='61' name='PHIDUID_SPATIAL_ACCEL_GYRO_COMPASS_1056_NEG_GAIN'/>
+<enum value='64' name='PHIDUID_STEPPER_BIPOLAR_1MOTOR'/>
+<enum value='65' name='PHIDUID_STEPPER_BIPOLAR_1MOTOR_M3'/>
+<enum value='66' name='PHIDUID_STEPPER_UNIPOLAR_4MOTOR'/>
+<enum value='68' name='PHIDUID_TEMPERATURESENSOR'/>
+<enum value='71' name='PHIDUID_TEMPERATURESENSOR_4'/>
+<enum value='69' name='PHIDUID_TEMPERATURESENSOR_AD22100'/>
+<enum value='72' name='PHIDUID_TEMPERATURESENSOR_IR'/>
+<enum value='67' name='PHIDUID_TEMPERATURESENSOR_OLD'/>
+<enum value='70' name='PHIDUID_TEMPERATURESENSOR_TERMINAL_BLOCKS'/>
+<enum value='73' name='PHIDUID_TEXTLCD_2x20'/>
+<enum value='74' name='PHIDUID_TEXTLCD_2x20_w_8_8_8'/>
+<enum value='75' name='PHIDUID_TEXTLCD_2x20_w_8_8_8_BRIGHTNESS'/>
+<enum value='76' name='PHIDUID_TEXTLCD_ADAPTER'/>
+<enum value='77' name='PHIDUID_TEXTLED_1x8'/>
+<enum value='78' name='PHIDUID_TEXTLED_4x8'/>
+<enum value='79' name='PHIDUID_WEIGHTSENSOR'/>
+<enum value='1' name='PTRUE'/>
+<enum value='2' name='PUNK_BOOL'/>
+<enum value='1e300' name='PUNK_DBL'/>
+<enum value='1e30' name='PUNK_FLT'/>
+<enum value='2147483647' name='PUNK_INT'/>
+<enum value='9223372036854775807' name='PUNK_INT64'/>
+<enum value='32767' name='PUNK_SHRT'/>
+<function name='CPhidgetAccelerometer_create'>
+<arg declared_type='CPhidgetAccelerometerHandle*' type='^^{_CPhidgetAccelerometer}' name='phid'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAccelerometer_getAcceleration'>
+<arg declared_type='CPhidgetAccelerometerHandle' type='^{_CPhidgetAccelerometer=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='acceleration'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAccelerometer_getAccelerationChangeTrigger'>
+<arg declared_type='CPhidgetAccelerometerHandle' type='^{_CPhidgetAccelerometer=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='trigger'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAccelerometer_getAccelerationMax'>
+<arg declared_type='CPhidgetAccelerometerHandle' type='^{_CPhidgetAccelerometer=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='max'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAccelerometer_getAccelerationMin'>
+<arg declared_type='CPhidgetAccelerometerHandle' type='^{_CPhidgetAccelerometer=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='min'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAccelerometer_getAxisCount'>
+<arg declared_type='CPhidgetAccelerometerHandle' type='^{_CPhidgetAccelerometer=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='count'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAccelerometer_setAccelerationChangeTrigger'>
+<arg declared_type='CPhidgetAccelerometerHandle' type='^{_CPhidgetAccelerometer=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double' type='d' name='trigger'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAccelerometer_set_OnAccelerationChange_Handler'>
+<arg declared_type='CPhidgetAccelerometerHandle' type='^{_CPhidgetAccelerometer=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetAccelerometerHandle, void *, int, double)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetAccelerometerHandle' type='^{_CPhidgetAccelerometer=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='double' type='d'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAdvancedServo_create'>
+<arg declared_type='CPhidgetAdvancedServoHandle*' type='^^{_CPhidgetAdvancedServo}' name='phid'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAdvancedServo_getAcceleration'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='acceleration'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAdvancedServo_getAccelerationMax'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='max'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAdvancedServo_getAccelerationMin'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='min'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAdvancedServo_getCurrent'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='current'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAdvancedServo_getEngaged'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int*' type='^i' name='engagedState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAdvancedServo_getMotorCount'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='count'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAdvancedServo_getPosition'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='position'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAdvancedServo_getPositionMax'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='max'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAdvancedServo_getPositionMin'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='min'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAdvancedServo_getServoType'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='CPhidget_ServoType*' type='^i' name='servoType'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAdvancedServo_getSpeedRampingOn'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int*' type='^i' name='rampingState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAdvancedServo_getStopped'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int*' type='^i' name='stoppedState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAdvancedServo_getVelocity'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='velocity'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAdvancedServo_getVelocityLimit'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='limit'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAdvancedServo_getVelocityMax'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='max'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAdvancedServo_getVelocityMin'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='min'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAdvancedServo_setAcceleration'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double' type='d' name='acceleration'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAdvancedServo_setEngaged'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int' type='i' name='engagedState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAdvancedServo_setPosition'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double' type='d' name='position'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAdvancedServo_setPositionMax'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double' type='d' name='max'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAdvancedServo_setPositionMin'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double' type='d' name='min'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAdvancedServo_setServoParameters'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double' type='d' name='min_us'/>
+<arg declared_type='double' type='d' name='max_us'/>
+<arg declared_type='double' type='d' name='degrees'/>
+<arg declared_type='double' type='d' name='velocity_max'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAdvancedServo_setServoType'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='CPhidget_ServoType' type='i' name='servoType'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAdvancedServo_setSpeedRampingOn'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int' type='i' name='rampingState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAdvancedServo_setVelocityLimit'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double' type='d' name='limit'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAdvancedServo_set_OnCurrentChange_Handler'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetAdvancedServoHandle, void *, int, double)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='double' type='d'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAdvancedServo_set_OnPositionChange_Handler'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetAdvancedServoHandle, void *, int, double)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='double' type='d'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAdvancedServo_set_OnVelocityChange_Handler'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetAdvancedServoHandle, void *, int, double)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetAdvancedServoHandle' type='^{_CPhidgetAdvancedServo=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='double' type='d'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAnalog_create'>
+<arg declared_type='CPhidgetAnalogHandle*' type='^^{_CPhidgetAnalog}' name='phid'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAnalog_getEnabled'>
+<arg declared_type='CPhidgetAnalogHandle' type='^{_CPhidgetAnalog=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int*' type='^i' name='enabledState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAnalog_getOutputCount'>
+<arg declared_type='CPhidgetAnalogHandle' type='^{_CPhidgetAnalog=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='count'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAnalog_getVoltage'>
+<arg declared_type='CPhidgetAnalogHandle' type='^{_CPhidgetAnalog=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='voltage'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAnalog_getVoltageMax'>
+<arg declared_type='CPhidgetAnalogHandle' type='^{_CPhidgetAnalog=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='max'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAnalog_getVoltageMin'>
+<arg declared_type='CPhidgetAnalogHandle' type='^{_CPhidgetAnalog=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='min'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAnalog_setEnabled'>
+<arg declared_type='CPhidgetAnalogHandle' type='^{_CPhidgetAnalog=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int' type='i' name='enabledState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetAnalog_setVoltage'>
+<arg declared_type='CPhidgetAnalogHandle' type='^{_CPhidgetAnalog=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double' type='d' name='voltage'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetBridge_create'>
+<arg declared_type='CPhidgetBridgeHandle*' type='^^{_CPhidgetBridge}' name='phid'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetBridge_getBridgeMax'>
+<arg declared_type='CPhidgetBridgeHandle' type='^{_CPhidgetBridge=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='max'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetBridge_getBridgeMin'>
+<arg declared_type='CPhidgetBridgeHandle' type='^{_CPhidgetBridge=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='min'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetBridge_getBridgeValue'>
+<arg declared_type='CPhidgetBridgeHandle' type='^{_CPhidgetBridge=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='value'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetBridge_getDataRate'>
+<arg declared_type='CPhidgetBridgeHandle' type='^{_CPhidgetBridge=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='milliseconds'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetBridge_getDataRateMax'>
+<arg declared_type='CPhidgetBridgeHandle' type='^{_CPhidgetBridge=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='max'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetBridge_getDataRateMin'>
+<arg declared_type='CPhidgetBridgeHandle' type='^{_CPhidgetBridge=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='min'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetBridge_getEnabled'>
+<arg declared_type='CPhidgetBridgeHandle' type='^{_CPhidgetBridge=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int*' type='^i' name='enabledState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetBridge_getGain'>
+<arg declared_type='CPhidgetBridgeHandle' type='^{_CPhidgetBridge=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='CPhidgetBridge_Gain*' type='^i' name='gain'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetBridge_getInputCount'>
+<arg declared_type='CPhidgetBridgeHandle' type='^{_CPhidgetBridge=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='count'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetBridge_setDataRate'>
+<arg declared_type='CPhidgetBridgeHandle' type='^{_CPhidgetBridge=}' name='phid'/>
+<arg declared_type='int' type='i' name='milliseconds'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetBridge_setEnabled'>
+<arg declared_type='CPhidgetBridgeHandle' type='^{_CPhidgetBridge=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int' type='i' name='enabledState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetBridge_setGain'>
+<arg declared_type='CPhidgetBridgeHandle' type='^{_CPhidgetBridge=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='CPhidgetBridge_Gain' type='i' name='gain'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetBridge_set_OnBridgeData_Handler'>
+<arg declared_type='CPhidgetBridgeHandle' type='^{_CPhidgetBridge=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetBridgeHandle, void *, int, double)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetBridgeHandle' type='^{_CPhidgetBridge=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='double' type='d'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetDictionary_addKey'>
+<arg declared_type='CPhidgetDictionaryHandle' type='^{_CPhidgetDictionary=}' name='dict'/>
+<arg declared_type='char*' const='true' type='*' name='key'/>
+<arg declared_type='char*' const='true' type='*' name='value'/>
+<arg declared_type='int' type='i' name='persistent'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetDictionary_close'>
+<arg declared_type='CPhidgetDictionaryHandle' type='^{_CPhidgetDictionary=}' name='dict'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetDictionary_create'>
+<arg declared_type='CPhidgetDictionaryHandle*' type='^^{_CPhidgetDictionary}' name='dict'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetDictionary_delete'>
+<arg declared_type='CPhidgetDictionaryHandle' type='^{_CPhidgetDictionary=}' name='dict'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetDictionary_getKey'>
+<arg declared_type='CPhidgetDictionaryHandle' type='^{_CPhidgetDictionary=}' name='dict'/>
+<arg declared_type='char*' const='true' type='*' name='key'/>
+<arg declared_type='char*' type='*' name='value'/>
+<arg declared_type='int' type='i' name='valuelen'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetDictionary_getServerAddress'>
+<arg declared_type='CPhidgetDictionaryHandle' type='^{_CPhidgetDictionary=}' name='dict'/>
+<arg declared_type='char**' const='true' type='^*' name='address'/>
+<arg declared_type='int*' type='^i' name='port'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetDictionary_getServerID'>
+<arg declared_type='CPhidgetDictionaryHandle' type='^{_CPhidgetDictionary=}' name='dict'/>
+<arg declared_type='char**' const='true' type='^*' name='serverID'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetDictionary_getServerStatus'>
+<arg declared_type='CPhidgetDictionaryHandle' type='^{_CPhidgetDictionary=}' name='dict'/>
+<arg declared_type='int*' type='^i' name='serverStatus'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetDictionary_openRemote'>
+<arg declared_type='CPhidgetDictionaryHandle' type='^{_CPhidgetDictionary=}' name='dict'/>
+<arg declared_type='char*' const='true' type='*' name='serverID'/>
+<arg declared_type='char*' const='true' type='*' name='password'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetDictionary_openRemoteIP'>
+<arg declared_type='CPhidgetDictionaryHandle' type='^{_CPhidgetDictionary=}' name='dict'/>
+<arg declared_type='char*' const='true' type='*' name='address'/>
+<arg declared_type='int' type='i' name='port'/>
+<arg declared_type='char*' const='true' type='*' name='password'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetDictionary_removeKey'>
+<arg declared_type='CPhidgetDictionaryHandle' type='^{_CPhidgetDictionary=}' name='dict'/>
+<arg declared_type='char*' const='true' type='*' name='pattern'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetDictionary_remove_OnKeyChange_Handler'>
+<arg declared_type='CPhidgetDictionaryListenerHandle' type='^{_CPhidgetDictionaryListener=}' name='dictlistener'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetDictionary_set_OnError_Handler'>
+<arg declared_type='CPhidgetDictionaryHandle' type='^{_CPhidgetDictionary=}' name='dict'/>
+<arg declared_type='int (*)(CPhidgetDictionaryHandle, void *, int, char *)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetDictionaryHandle' type='^{_CPhidgetDictionary=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='char*' const='true' type='*'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetDictionary_set_OnKeyChange_Handler'>
+<arg declared_type='CPhidgetDictionaryHandle' type='^{_CPhidgetDictionary=}' name='dict'/>
+<arg declared_type='CPhidgetDictionaryListenerHandle*' type='^^{_CPhidgetDictionaryListener}' name='dictlistener'/>
+<arg declared_type='char*' const='true' type='*' name='pattern'/>
+<arg declared_type='CPhidgetDictionary_OnKeyChange_Function' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetDictionaryHandle' type='^{_CPhidgetDictionary=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='char*' const='true' type='*'/>
+<arg declared_type='char*' const='true' type='*'/>
+<arg declared_type='CPhidgetDictionary_keyChangeReason' type='i'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetDictionary_set_OnServerConnect_Handler'>
+<arg declared_type='CPhidgetDictionaryHandle' type='^{_CPhidgetDictionary=}' name='dict'/>
+<arg declared_type='int (*)(CPhidgetDictionaryHandle, void *)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetDictionaryHandle' type='^{_CPhidgetDictionary=}'/>
+<arg declared_type='void*' type='^v'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetDictionary_set_OnServerDisconnect_Handler'>
+<arg declared_type='CPhidgetDictionaryHandle' type='^{_CPhidgetDictionary=}' name='dict'/>
+<arg declared_type='int (*)(CPhidgetDictionaryHandle, void *)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetDictionaryHandle' type='^{_CPhidgetDictionary=}'/>
+<arg declared_type='void*' type='^v'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetEncoder_create'>
+<arg declared_type='CPhidgetEncoderHandle*' type='^^{_CPhidgetEncoder}' name='phid'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetEncoder_getEnabled'>
+<arg declared_type='CPhidgetEncoderHandle' type='^{_CPhidgetEncoder=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int*' type='^i' name='enabledState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetEncoder_getEncoderCount'>
+<arg declared_type='CPhidgetEncoderHandle' type='^{_CPhidgetEncoder=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='count'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetEncoder_getIndexPosition'>
+<arg declared_type='CPhidgetEncoderHandle' type='^{_CPhidgetEncoder=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int*' type='^i' name='position'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetEncoder_getInputCount'>
+<arg declared_type='CPhidgetEncoderHandle' type='^{_CPhidgetEncoder=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='count'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetEncoder_getInputState'>
+<arg declared_type='CPhidgetEncoderHandle' type='^{_CPhidgetEncoder=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int*' type='^i' name='inputState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetEncoder_getPosition'>
+<arg declared_type='CPhidgetEncoderHandle' type='^{_CPhidgetEncoder=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int*' type='^i' name='position'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetEncoder_setEnabled'>
+<arg declared_type='CPhidgetEncoderHandle' type='^{_CPhidgetEncoder=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int' type='i' name='enabledState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetEncoder_setPosition'>
+<arg declared_type='CPhidgetEncoderHandle' type='^{_CPhidgetEncoder=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int' type='i' name='position'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetEncoder_set_OnIndex_Handler'>
+<arg declared_type='CPhidgetEncoderHandle' type='^{_CPhidgetEncoder=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetEncoderHandle, void *, int, int)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetEncoderHandle' type='^{_CPhidgetEncoder=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='int' type='i'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetEncoder_set_OnInputChange_Handler'>
+<arg declared_type='CPhidgetEncoderHandle' type='^{_CPhidgetEncoder=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetEncoderHandle, void *, int, int)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetEncoderHandle' type='^{_CPhidgetEncoder=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='int' type='i'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetEncoder_set_OnPositionChange_Handler'>
+<arg declared_type='CPhidgetEncoderHandle' type='^{_CPhidgetEncoder=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetEncoderHandle, void *, int, int, int)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetEncoderHandle' type='^{_CPhidgetEncoder=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='int' type='i'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetFrequencyCounter_create'>
+<arg declared_type='CPhidgetFrequencyCounterHandle*' type='^^{_CPhidgetFrequencyCounter}' name='phid'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetFrequencyCounter_getEnabled'>
+<arg declared_type='CPhidgetFrequencyCounterHandle' type='^{_CPhidgetFrequencyCounter=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int*' type='^i' name='enabledState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetFrequencyCounter_getFilter'>
+<arg declared_type='CPhidgetFrequencyCounterHandle' type='^{_CPhidgetFrequencyCounter=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='CPhidgetFrequencyCounter_FilterType*' type='^i' name='filter'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetFrequencyCounter_getFrequency'>
+<arg declared_type='CPhidgetFrequencyCounterHandle' type='^{_CPhidgetFrequencyCounter=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='frequency'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetFrequencyCounter_getFrequencyInputCount'>
+<arg declared_type='CPhidgetFrequencyCounterHandle' type='^{_CPhidgetFrequencyCounter=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='count'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetFrequencyCounter_getTimeout'>
+<arg declared_type='CPhidgetFrequencyCounterHandle' type='^{_CPhidgetFrequencyCounter=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int*' type='^i' name='timeout'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetFrequencyCounter_getTotalCount'>
+<arg declared_type='CPhidgetFrequencyCounterHandle' type='^{_CPhidgetFrequencyCounter=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='__int64*' type='^q' name='count'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetFrequencyCounter_getTotalTime'>
+<arg declared_type='CPhidgetFrequencyCounterHandle' type='^{_CPhidgetFrequencyCounter=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='__int64*' type='^q' name='time'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetFrequencyCounter_reset'>
+<arg declared_type='CPhidgetFrequencyCounterHandle' type='^{_CPhidgetFrequencyCounter=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetFrequencyCounter_setEnabled'>
+<arg declared_type='CPhidgetFrequencyCounterHandle' type='^{_CPhidgetFrequencyCounter=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int' type='i' name='enabledState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetFrequencyCounter_setFilter'>
+<arg declared_type='CPhidgetFrequencyCounterHandle' type='^{_CPhidgetFrequencyCounter=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='CPhidgetFrequencyCounter_FilterType' type='i' name='filter'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetFrequencyCounter_setTimeout'>
+<arg declared_type='CPhidgetFrequencyCounterHandle' type='^{_CPhidgetFrequencyCounter=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int' type='i' name='timeout'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetFrequencyCounter_set_OnCount_Handler'>
+<arg declared_type='CPhidgetFrequencyCounterHandle' type='^{_CPhidgetFrequencyCounter=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetFrequencyCounterHandle, void *, int, int, int)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetFrequencyCounterHandle' type='^{_CPhidgetFrequencyCounter=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='int' type='i'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetGPS_create'>
+<arg declared_type='CPhidgetGPSHandle*' type='^^{_CPhidgetGPS}' name='phid'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetGPS_getAltitude'>
+<arg declared_type='CPhidgetGPSHandle' type='^{_CPhidgetGPS=}' name='phid'/>
+<arg declared_type='double*' type='^d' name='altitude'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetGPS_getDate'>
+<arg declared_type='CPhidgetGPSHandle' type='^{_CPhidgetGPS=}' name='phid'/>
+<arg declared_type='GPSDate*' type='^{__GPSDate=sss}' name='date'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetGPS_getHeading'>
+<arg declared_type='CPhidgetGPSHandle' type='^{_CPhidgetGPS=}' name='phid'/>
+<arg declared_type='double*' type='^d' name='heading'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetGPS_getLatitude'>
+<arg declared_type='CPhidgetGPSHandle' type='^{_CPhidgetGPS=}' name='phid'/>
+<arg declared_type='double*' type='^d' name='latitude'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetGPS_getLongitude'>
+<arg declared_type='CPhidgetGPSHandle' type='^{_CPhidgetGPS=}' name='phid'/>
+<arg declared_type='double*' type='^d' name='longitude'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetGPS_getNMEAData'>
+<arg declared_type='CPhidgetGPSHandle' type='^{_CPhidgetGPS=}' name='phid'/>
+<arg declared_type='NMEAData*' type='^{__NMEAData={__GPGGA={__GPSTime=ssss}ddssddd}{__GPGSA=cs[12s]ddd}{__GPGSV=s[12{__GPSSatInfo=ssis}]}{__GPRMC={__GPSTime=ssss}cdddd{__GPSDate=sss}dc}{__GPVTG=ddddc}}' name='data'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetGPS_getPositionFixStatus'>
+<arg declared_type='CPhidgetGPSHandle' type='^{_CPhidgetGPS=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='fixStatus'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetGPS_getTime'>
+<arg declared_type='CPhidgetGPSHandle' type='^{_CPhidgetGPS=}' name='phid'/>
+<arg declared_type='GPSTime*' type='^{__GPSTime=ssss}' name='time'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetGPS_getVelocity'>
+<arg declared_type='CPhidgetGPSHandle' type='^{_CPhidgetGPS=}' name='phid'/>
+<arg declared_type='double*' type='^d' name='velocity'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetGPS_set_OnPositionChange_Handler'>
+<arg declared_type='CPhidgetGPSHandle' type='^{_CPhidgetGPS=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetGPSHandle, void *, double, double, double)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetGPSHandle' type='^{_CPhidgetGPS=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='double' type='d'/>
+<arg declared_type='double' type='d'/>
+<arg declared_type='double' type='d'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetGPS_set_OnPositionFixStatusChange_Handler'>
+<arg declared_type='CPhidgetGPSHandle' type='^{_CPhidgetGPS=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetGPSHandle, void *, int)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetGPSHandle' type='^{_CPhidgetGPS=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetIR_Transmit'>
+<arg declared_type='CPhidgetIRHandle' type='^{_CPhidgetIR=}' name='phid'/>
+<arg declared_type='unsigned char*' type='*' name='data'/>
+<arg declared_type='CPhidgetIR_CodeInfoHandle' type='^{_CPhidgetIR_CodeInfo=iiiii[2i][2i][2i][26i]i[16C]ii}' name='codeInfo'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetIR_TransmitRaw'>
+<arg declared_type='CPhidgetIRHandle' type='^{_CPhidgetIR=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='data'/>
+<arg declared_type='int' type='i' name='length'/>
+<arg declared_type='int' type='i' name='carrierFrequency'/>
+<arg declared_type='int' type='i' name='dutyCycle'/>
+<arg declared_type='int' type='i' name='gap'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetIR_TransmitRepeat'>
+<arg declared_type='CPhidgetIRHandle' type='^{_CPhidgetIR=}' name='phid'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetIR_create'>
+<arg declared_type='CPhidgetIRHandle*' type='^^{_CPhidgetIR}' name='phid'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetIR_getLastCode'>
+<arg declared_type='CPhidgetIRHandle' type='^{_CPhidgetIR=}' name='phid'/>
+<arg declared_type='unsigned char*' type='*' name='data'/>
+<arg declared_type='int*' type='^i' name='dataLength'/>
+<arg declared_type='int*' type='^i' name='bitCount'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetIR_getLastLearnedCode'>
+<arg declared_type='CPhidgetIRHandle' type='^{_CPhidgetIR=}' name='phid'/>
+<arg declared_type='unsigned char*' type='*' name='data'/>
+<arg declared_type='int*' type='^i' name='dataLength'/>
+<arg declared_type='CPhidgetIR_CodeInfo*' type='^{_CPhidgetIR_CodeInfo=iiiii[2i][2i][2i][26i]i[16C]ii}' name='codeInfo'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetIR_getRawData'>
+<arg declared_type='CPhidgetIRHandle' type='^{_CPhidgetIR=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='data'/>
+<arg declared_type='int*' type='^i' name='dataLength'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetIR_set_OnCode_Handler'>
+<arg declared_type='CPhidgetIRHandle' type='^{_CPhidgetIR=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetIRHandle, void *, unsigned char *, int, int, int)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetIRHandle' type='^{_CPhidgetIR=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='unsigned char*' type='*'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='int' type='i'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetIR_set_OnLearn_Handler'>
+<arg declared_type='CPhidgetIRHandle' type='^{_CPhidgetIR=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetIRHandle, void *, unsigned char *, int, CPhidgetIR_CodeInfoHandle)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetIRHandle' type='^{_CPhidgetIR=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='unsigned char*' type='*'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='CPhidgetIR_CodeInfoHandle' type='^{_CPhidgetIR_CodeInfo=iiiii[2i][2i][2i][26i]i[16C]ii}'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetIR_set_OnRawData_Handler'>
+<arg declared_type='CPhidgetIRHandle' type='^{_CPhidgetIR=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetIRHandle, void *, int *, int)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetIRHandle' type='^{_CPhidgetIR=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int*' type='^i'/>
+<arg declared_type='int' type='i'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetInterfaceKit_create'>
+<arg declared_type='CPhidgetInterfaceKitHandle*' type='^^{_CPhidgetInterfaceKit}' name='phid'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetInterfaceKit_getDataRate'>
+<arg declared_type='CPhidgetInterfaceKitHandle' type='^{_CPhidgetInterfaceKit=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int*' type='^i' name='milliseconds'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetInterfaceKit_getDataRateMax'>
+<arg declared_type='CPhidgetInterfaceKitHandle' type='^{_CPhidgetInterfaceKit=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int*' type='^i' name='max'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetInterfaceKit_getDataRateMin'>
+<arg declared_type='CPhidgetInterfaceKitHandle' type='^{_CPhidgetInterfaceKit=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int*' type='^i' name='min'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetInterfaceKit_getInputCount'>
+<arg declared_type='CPhidgetInterfaceKitHandle' type='^{_CPhidgetInterfaceKit=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='count'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetInterfaceKit_getInputState'>
+<arg declared_type='CPhidgetInterfaceKitHandle' type='^{_CPhidgetInterfaceKit=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int*' type='^i' name='inputState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetInterfaceKit_getOutputCount'>
+<arg declared_type='CPhidgetInterfaceKitHandle' type='^{_CPhidgetInterfaceKit=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='count'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetInterfaceKit_getOutputState'>
+<arg declared_type='CPhidgetInterfaceKitHandle' type='^{_CPhidgetInterfaceKit=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int*' type='^i' name='outputState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetInterfaceKit_getRatiometric'>
+<arg declared_type='CPhidgetInterfaceKitHandle' type='^{_CPhidgetInterfaceKit=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='ratiometric'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetInterfaceKit_getSensorChangeTrigger'>
+<arg declared_type='CPhidgetInterfaceKitHandle' type='^{_CPhidgetInterfaceKit=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int*' type='^i' name='trigger'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetInterfaceKit_getSensorCount'>
+<arg declared_type='CPhidgetInterfaceKitHandle' type='^{_CPhidgetInterfaceKit=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='count'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetInterfaceKit_getSensorRawValue'>
+<arg declared_type='CPhidgetInterfaceKitHandle' type='^{_CPhidgetInterfaceKit=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int*' type='^i' name='sensorRawValue'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetInterfaceKit_getSensorValue'>
+<arg declared_type='CPhidgetInterfaceKitHandle' type='^{_CPhidgetInterfaceKit=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int*' type='^i' name='sensorValue'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetInterfaceKit_setDataRate'>
+<arg declared_type='CPhidgetInterfaceKitHandle' type='^{_CPhidgetInterfaceKit=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int' type='i' name='milliseconds'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetInterfaceKit_setOutputState'>
+<arg declared_type='CPhidgetInterfaceKitHandle' type='^{_CPhidgetInterfaceKit=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int' type='i' name='outputState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetInterfaceKit_setRatiometric'>
+<arg declared_type='CPhidgetInterfaceKitHandle' type='^{_CPhidgetInterfaceKit=}' name='phid'/>
+<arg declared_type='int' type='i' name='ratiometric'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetInterfaceKit_setSensorChangeTrigger'>
+<arg declared_type='CPhidgetInterfaceKitHandle' type='^{_CPhidgetInterfaceKit=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int' type='i' name='trigger'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetInterfaceKit_set_OnInputChange_Handler'>
+<arg declared_type='CPhidgetInterfaceKitHandle' type='^{_CPhidgetInterfaceKit=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetInterfaceKitHandle, void *, int, int)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetInterfaceKitHandle' type='^{_CPhidgetInterfaceKit=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='int' type='i'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetInterfaceKit_set_OnOutputChange_Handler'>
+<arg declared_type='CPhidgetInterfaceKitHandle' type='^{_CPhidgetInterfaceKit=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetInterfaceKitHandle, void *, int, int)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetInterfaceKitHandle' type='^{_CPhidgetInterfaceKit=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='int' type='i'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetInterfaceKit_set_OnSensorChange_Handler'>
+<arg declared_type='CPhidgetInterfaceKitHandle' type='^{_CPhidgetInterfaceKit=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetInterfaceKitHandle, void *, int, int)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetInterfaceKitHandle' type='^{_CPhidgetInterfaceKit=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='int' type='i'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetLED_create'>
+<arg declared_type='CPhidgetLEDHandle*' type='^^{_CPhidgetLED}' name='phid'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetLED_getBrightness'>
+<arg declared_type='CPhidgetLEDHandle' type='^{_CPhidgetLED=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='brightness'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetLED_getCurrentLimit'>
+<arg declared_type='CPhidgetLEDHandle' type='^{_CPhidgetLED=}' name='phid'/>
+<arg declared_type='CPhidgetLED_CurrentLimit*' type='^i' name='currentLimit'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetLED_getCurrentLimitIndexed'>
+<arg declared_type='CPhidgetLEDHandle' type='^{_CPhidgetLED=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='limit'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetLED_getLEDCount'>
+<arg declared_type='CPhidgetLEDHandle' type='^{_CPhidgetLED=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='count'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetLED_getVoltage'>
+<arg declared_type='CPhidgetLEDHandle' type='^{_CPhidgetLED=}' name='phid'/>
+<arg declared_type='CPhidgetLED_Voltage*' type='^i' name='voltage'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetLED_setBrightness'>
+<arg declared_type='CPhidgetLEDHandle' type='^{_CPhidgetLED=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double' type='d' name='brightness'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetLED_setCurrentLimit'>
+<arg declared_type='CPhidgetLEDHandle' type='^{_CPhidgetLED=}' name='phid'/>
+<arg declared_type='CPhidgetLED_CurrentLimit' type='i' name='currentLimit'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetLED_setCurrentLimitIndexed'>
+<arg declared_type='CPhidgetLEDHandle' type='^{_CPhidgetLED=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double' type='d' name='limit'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetLED_setVoltage'>
+<arg declared_type='CPhidgetLEDHandle' type='^{_CPhidgetLED=}' name='phid'/>
+<arg declared_type='CPhidgetLED_Voltage' type='i' name='voltage'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetManager_close'>
+<arg declared_type='CPhidgetManagerHandle' type='^{_CPhidgetManager=}' name='phidm'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetManager_create'>
+<arg declared_type='CPhidgetManagerHandle*' type='^^{_CPhidgetManager}' name='phidm'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetManager_delete'>
+<arg declared_type='CPhidgetManagerHandle' type='^{_CPhidgetManager=}' name='phidm'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetManager_freeAttachedDevicesArray'>
+<arg declared_type='CPhidgetHandle*' type='^^{_CPhidget}' name='phidArray'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetManager_getAttachedDevices'>
+<arg declared_type='CPhidgetManagerHandle' type='^{_CPhidgetManager=}' name='phidm'/>
+<arg declared_type='CPhidgetHandle**' type='^^^{_CPhidget}' name='phidArray'/>
+<arg declared_type='int*' type='^i' name='count'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetManager_getServerAddress'>
+<arg declared_type='CPhidgetManagerHandle' type='^{_CPhidgetManager=}' name='phidm'/>
+<arg declared_type='char**' const='true' type='^*' name='address'/>
+<arg declared_type='int*' type='^i' name='port'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetManager_getServerID'>
+<arg declared_type='CPhidgetManagerHandle' type='^{_CPhidgetManager=}' name='phidm'/>
+<arg declared_type='char**' const='true' type='^*' name='serverID'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetManager_getServerStatus'>
+<arg declared_type='CPhidgetManagerHandle' type='^{_CPhidgetManager=}' name='phidm'/>
+<arg declared_type='int*' type='^i' name='serverStatus'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetManager_open'>
+<arg declared_type='CPhidgetManagerHandle' type='^{_CPhidgetManager=}' name='phidm'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetManager_openRemote'>
+<arg declared_type='CPhidgetManagerHandle' type='^{_CPhidgetManager=}' name='phidm'/>
+<arg declared_type='char*' const='true' type='*' name='serverID'/>
+<arg declared_type='char*' const='true' type='*' name='password'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetManager_openRemoteIP'>
+<arg declared_type='CPhidgetManagerHandle' type='^{_CPhidgetManager=}' name='phidm'/>
+<arg declared_type='char*' const='true' type='*' name='address'/>
+<arg declared_type='int' type='i' name='port'/>
+<arg declared_type='char*' const='true' type='*' name='password'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetManager_set_OnAttach_Handler'>
+<arg declared_type='CPhidgetManagerHandle' type='^{_CPhidgetManager=}' name='phidm'/>
+<arg declared_type='int (*)(CPhidgetHandle, void *)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}'/>
+<arg declared_type='void*' type='^v'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetManager_set_OnDetach_Handler'>
+<arg declared_type='CPhidgetManagerHandle' type='^{_CPhidgetManager=}' name='phidm'/>
+<arg declared_type='int (*)(CPhidgetHandle, void *)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}'/>
+<arg declared_type='void*' type='^v'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetManager_set_OnError_Handler'>
+<arg declared_type='CPhidgetManagerHandle' type='^{_CPhidgetManager=}' name='phidm'/>
+<arg declared_type='int (*)(CPhidgetManagerHandle, void *, int, char *)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetManagerHandle' type='^{_CPhidgetManager=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='char*' const='true' type='*'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetManager_set_OnServerConnect_Handler'>
+<arg declared_type='CPhidgetManagerHandle' type='^{_CPhidgetManager=}' name='phidm'/>
+<arg declared_type='int (*)(CPhidgetManagerHandle, void *)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetManagerHandle' type='^{_CPhidgetManager=}'/>
+<arg declared_type='void*' type='^v'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetManager_set_OnServerDisconnect_Handler'>
+<arg declared_type='CPhidgetManagerHandle' type='^{_CPhidgetManager=}' name='phidm'/>
+<arg declared_type='int (*)(CPhidgetManagerHandle, void *)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetManagerHandle' type='^{_CPhidgetManager=}'/>
+<arg declared_type='void*' type='^v'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_create'>
+<arg declared_type='CPhidgetMotorControlHandle*' type='^^{_CPhidgetMotorControl}' name='phid'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_getAcceleration'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='acceleration'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_getAccelerationMax'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='max'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_getAccelerationMin'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='min'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_getBackEMF'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='voltage'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_getBackEMFSensingState'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int*' type='^i' name='bEMFState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_getBraking'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='braking'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_getCurrent'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='current'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_getEncoderCount'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='count'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_getEncoderPosition'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int*' type='^i' name='position'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_getInputCount'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='count'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_getInputState'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int*' type='^i' name='inputState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_getMotorCount'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='count'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_getRatiometric'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='ratiometric'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_getSensorCount'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='count'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_getSensorRawValue'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int*' type='^i' name='sensorRawValue'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_getSensorValue'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int*' type='^i' name='sensorValue'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_getSupplyVoltage'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='double*' type='^d' name='supplyVoltage'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_getVelocity'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='velocity'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_setAcceleration'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double' type='d' name='acceleration'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_setBackEMFSensingState'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int' type='i' name='bEMFState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_setBraking'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double' type='d' name='braking'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_setEncoderPosition'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int' type='i' name='position'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_setRatiometric'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int' type='i' name='ratiometric'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_setVelocity'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double' type='d' name='velocity'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_set_OnBackEMFUpdate_Handler'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetMotorControlHandle, void *, int, double)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='double' type='d'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_set_OnCurrentChange_Handler'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetMotorControlHandle, void *, int, double)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='double' type='d'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_set_OnCurrentUpdate_Handler'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetMotorControlHandle, void *, int, double)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='double' type='d'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_set_OnEncoderPositionChange_Handler'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetMotorControlHandle, void *, int, int, int)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='int' type='i'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_set_OnEncoderPositionUpdate_Handler'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetMotorControlHandle, void *, int, int)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='int' type='i'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_set_OnInputChange_Handler'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetMotorControlHandle, void *, int, int)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='int' type='i'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_set_OnSensorUpdate_Handler'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetMotorControlHandle, void *, int, int)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='int' type='i'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetMotorControl_set_OnVelocityChange_Handler'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetMotorControlHandle, void *, int, double)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetMotorControlHandle' type='^{_CPhidgetMotorControl=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='double' type='d'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetPHSensor_create'>
+<arg declared_type='CPhidgetPHSensorHandle*' type='^^{_CPhidgetPHSensor}' name='phid'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetPHSensor_getPH'>
+<arg declared_type='CPhidgetPHSensorHandle' type='^{_CPhidgetPHSensor=}' name='phid'/>
+<arg declared_type='double*' type='^d' name='ph'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetPHSensor_getPHChangeTrigger'>
+<arg declared_type='CPhidgetPHSensorHandle' type='^{_CPhidgetPHSensor=}' name='phid'/>
+<arg declared_type='double*' type='^d' name='trigger'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetPHSensor_getPHMax'>
+<arg declared_type='CPhidgetPHSensorHandle' type='^{_CPhidgetPHSensor=}' name='phid'/>
+<arg declared_type='double*' type='^d' name='max'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetPHSensor_getPHMin'>
+<arg declared_type='CPhidgetPHSensorHandle' type='^{_CPhidgetPHSensor=}' name='phid'/>
+<arg declared_type='double*' type='^d' name='min'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetPHSensor_getPotential'>
+<arg declared_type='CPhidgetPHSensorHandle' type='^{_CPhidgetPHSensor=}' name='phid'/>
+<arg declared_type='double*' type='^d' name='potential'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetPHSensor_getPotentialMax'>
+<arg declared_type='CPhidgetPHSensorHandle' type='^{_CPhidgetPHSensor=}' name='phid'/>
+<arg declared_type='double*' type='^d' name='max'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetPHSensor_getPotentialMin'>
+<arg declared_type='CPhidgetPHSensorHandle' type='^{_CPhidgetPHSensor=}' name='phid'/>
+<arg declared_type='double*' type='^d' name='min'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetPHSensor_setPHChangeTrigger'>
+<arg declared_type='CPhidgetPHSensorHandle' type='^{_CPhidgetPHSensor=}' name='phid'/>
+<arg declared_type='double' type='d' name='trigger'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetPHSensor_setTemperature'>
+<arg declared_type='CPhidgetPHSensorHandle' type='^{_CPhidgetPHSensor=}' name='phid'/>
+<arg declared_type='double' type='d' name='temperature'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetPHSensor_set_OnPHChange_Handler'>
+<arg declared_type='CPhidgetPHSensorHandle' type='^{_CPhidgetPHSensor=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetPHSensorHandle, void *, double)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetPHSensorHandle' type='^{_CPhidgetPHSensor=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='double' type='d'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetRFID_create'>
+<arg declared_type='CPhidgetRFIDHandle*' type='^^{_CPhidgetRFID}' name='phid'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetRFID_getAntennaOn'>
+<arg declared_type='CPhidgetRFIDHandle' type='^{_CPhidgetRFID=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='antennaState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetRFID_getLEDOn'>
+<arg declared_type='CPhidgetRFIDHandle' type='^{_CPhidgetRFID=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='LEDState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetRFID_getLastTag2'>
+<arg declared_type='CPhidgetRFIDHandle' type='^{_CPhidgetRFID=}' name='phid'/>
+<arg declared_type='char**' type='^*' name='tagString'/>
+<arg declared_type='CPhidgetRFID_Protocol*' type='^i' name='protocol'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetRFID_getOutputCount'>
+<arg declared_type='CPhidgetRFIDHandle' type='^{_CPhidgetRFID=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='count'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetRFID_getOutputState'>
+<arg declared_type='CPhidgetRFIDHandle' type='^{_CPhidgetRFID=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int*' type='^i' name='outputState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetRFID_getTagStatus'>
+<arg declared_type='CPhidgetRFIDHandle' type='^{_CPhidgetRFID=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='status'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetRFID_setAntennaOn'>
+<arg declared_type='CPhidgetRFIDHandle' type='^{_CPhidgetRFID=}' name='phid'/>
+<arg declared_type='int' type='i' name='antennaState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetRFID_setLEDOn'>
+<arg declared_type='CPhidgetRFIDHandle' type='^{_CPhidgetRFID=}' name='phid'/>
+<arg declared_type='int' type='i' name='LEDState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetRFID_setOutputState'>
+<arg declared_type='CPhidgetRFIDHandle' type='^{_CPhidgetRFID=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int' type='i' name='outputState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetRFID_set_OnOutputChange_Handler'>
+<arg declared_type='CPhidgetRFIDHandle' type='^{_CPhidgetRFID=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetRFIDHandle, void *, int, int)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetRFIDHandle' type='^{_CPhidgetRFID=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='int' type='i'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetRFID_set_OnTag2_Handler'>
+<arg declared_type='CPhidgetRFIDHandle' type='^{_CPhidgetRFID=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetRFIDHandle, void *, char *, CPhidgetRFID_Protocol)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetRFIDHandle' type='^{_CPhidgetRFID=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='char*' type='*'/>
+<arg declared_type='CPhidgetRFID_Protocol' type='i'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetRFID_set_OnTagLost2_Handler'>
+<arg declared_type='CPhidgetRFIDHandle' type='^{_CPhidgetRFID=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetRFIDHandle, void *, char *, CPhidgetRFID_Protocol)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetRFIDHandle' type='^{_CPhidgetRFID=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='char*' type='*'/>
+<arg declared_type='CPhidgetRFID_Protocol' type='i'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetRFID_write'>
+<arg declared_type='CPhidgetRFIDHandle' type='^{_CPhidgetRFID=}' name='phid'/>
+<arg declared_type='char*' type='*' name='tagString'/>
+<arg declared_type='CPhidgetRFID_Protocol' type='i' name='protocol'/>
+<arg declared_type='int' type='i' name='lock'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetServo_create'>
+<arg declared_type='CPhidgetServoHandle*' type='^^{_CPhidgetServo}' name='phid'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetServo_getEngaged'>
+<arg declared_type='CPhidgetServoHandle' type='^{_CPhidgetServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int*' type='^i' name='engagedState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetServo_getMotorCount'>
+<arg declared_type='CPhidgetServoHandle' type='^{_CPhidgetServo=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='count'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetServo_getPosition'>
+<arg declared_type='CPhidgetServoHandle' type='^{_CPhidgetServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='position'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetServo_getPositionMax'>
+<arg declared_type='CPhidgetServoHandle' type='^{_CPhidgetServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='max'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetServo_getPositionMin'>
+<arg declared_type='CPhidgetServoHandle' type='^{_CPhidgetServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='min'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetServo_getServoType'>
+<arg declared_type='CPhidgetServoHandle' type='^{_CPhidgetServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='CPhidget_ServoType*' type='^i' name='servoType'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetServo_setEngaged'>
+<arg declared_type='CPhidgetServoHandle' type='^{_CPhidgetServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int' type='i' name='engagedState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetServo_setPosition'>
+<arg declared_type='CPhidgetServoHandle' type='^{_CPhidgetServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double' type='d' name='position'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetServo_setServoParameters'>
+<arg declared_type='CPhidgetServoHandle' type='^{_CPhidgetServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double' type='d' name='min_us'/>
+<arg declared_type='double' type='d' name='max_us'/>
+<arg declared_type='double' type='d' name='degrees'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetServo_setServoType'>
+<arg declared_type='CPhidgetServoHandle' type='^{_CPhidgetServo=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='CPhidget_ServoType' type='i' name='servoType'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetServo_set_OnPositionChange_Handler'>
+<arg declared_type='CPhidgetServoHandle' type='^{_CPhidgetServo=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetServoHandle, void *, int, double)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetServoHandle' type='^{_CPhidgetServo=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='double' type='d'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetSpatial_create'>
+<arg declared_type='CPhidgetSpatialHandle*' type='^^{_CPhidgetSpatial}' name='phid'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetSpatial_getAcceleration'>
+<arg declared_type='CPhidgetSpatialHandle' type='^{_CPhidgetSpatial=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='acceleration'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetSpatial_getAccelerationAxisCount'>
+<arg declared_type='CPhidgetSpatialHandle' type='^{_CPhidgetSpatial=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='count'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetSpatial_getAccelerationMax'>
+<arg declared_type='CPhidgetSpatialHandle' type='^{_CPhidgetSpatial=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='max'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetSpatial_getAccelerationMin'>
+<arg declared_type='CPhidgetSpatialHandle' type='^{_CPhidgetSpatial=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='min'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetSpatial_getAngularRate'>
+<arg declared_type='CPhidgetSpatialHandle' type='^{_CPhidgetSpatial=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='angularRate'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetSpatial_getAngularRateMax'>
+<arg declared_type='CPhidgetSpatialHandle' type='^{_CPhidgetSpatial=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='max'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetSpatial_getAngularRateMin'>
+<arg declared_type='CPhidgetSpatialHandle' type='^{_CPhidgetSpatial=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='min'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetSpatial_getCompassAxisCount'>
+<arg declared_type='CPhidgetSpatialHandle' type='^{_CPhidgetSpatial=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='count'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetSpatial_getDataRate'>
+<arg declared_type='CPhidgetSpatialHandle' type='^{_CPhidgetSpatial=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='milliseconds'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetSpatial_getDataRateMax'>
+<arg declared_type='CPhidgetSpatialHandle' type='^{_CPhidgetSpatial=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='max'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetSpatial_getDataRateMin'>
+<arg declared_type='CPhidgetSpatialHandle' type='^{_CPhidgetSpatial=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='min'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetSpatial_getGyroAxisCount'>
+<arg declared_type='CPhidgetSpatialHandle' type='^{_CPhidgetSpatial=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='count'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetSpatial_getMagneticField'>
+<arg declared_type='CPhidgetSpatialHandle' type='^{_CPhidgetSpatial=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='magneticField'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetSpatial_getMagneticFieldMax'>
+<arg declared_type='CPhidgetSpatialHandle' type='^{_CPhidgetSpatial=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='max'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetSpatial_getMagneticFieldMin'>
+<arg declared_type='CPhidgetSpatialHandle' type='^{_CPhidgetSpatial=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='min'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetSpatial_resetCompassCorrectionParameters'>
+<arg declared_type='CPhidgetSpatialHandle' type='^{_CPhidgetSpatial=}' name='phid'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetSpatial_setCompassCorrectionParameters'>
+<arg declared_type='CPhidgetSpatialHandle' type='^{_CPhidgetSpatial=}' name='phid'/>
+<arg declared_type='double' type='d' name='magField'/>
+<arg declared_type='double' type='d' name='offset0'/>
+<arg declared_type='double' type='d' name='offset1'/>
+<arg declared_type='double' type='d' name='offset2'/>
+<arg declared_type='double' type='d' name='gain0'/>
+<arg declared_type='double' type='d' name='gain1'/>
+<arg declared_type='double' type='d' name='gain2'/>
+<arg declared_type='double' type='d' name='T0'/>
+<arg declared_type='double' type='d' name='T1'/>
+<arg declared_type='double' type='d' name='T2'/>
+<arg declared_type='double' type='d' name='T3'/>
+<arg declared_type='double' type='d' name='T4'/>
+<arg declared_type='double' type='d' name='T5'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetSpatial_setDataRate'>
+<arg declared_type='CPhidgetSpatialHandle' type='^{_CPhidgetSpatial=}' name='phid'/>
+<arg declared_type='int' type='i' name='milliseconds'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetSpatial_set_OnSpatialData_Handler'>
+<arg declared_type='CPhidgetSpatialHandle' type='^{_CPhidgetSpatial=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetSpatialHandle, void *, CPhidgetSpatial_SpatialEventDataHandle *, int)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetSpatialHandle' type='^{_CPhidgetSpatial=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='CPhidgetSpatial_SpatialEventDataHandle*' type='^^{_CPhidgetSpatial_SpatialEventData}'/>
+<arg declared_type='int' type='i'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetSpatial_zeroGyro'>
+<arg declared_type='CPhidgetSpatialHandle' type='^{_CPhidgetSpatial=}' name='phid'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_create'>
+<arg declared_type='CPhidgetStepperHandle*' type='^^{_CPhidgetStepper}' name='phid'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_getAcceleration'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='acceleration'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_getAccelerationMax'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='max'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_getAccelerationMin'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='min'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_getCurrent'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='current'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_getCurrentLimit'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='limit'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_getCurrentMax'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='max'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_getCurrentMin'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='min'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_getCurrentPosition'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='__int64*' type='^q' name='position'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_getEngaged'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int*' type='^i' name='engagedState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_getInputCount'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='count'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_getInputState'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int*' type='^i' name='inputState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_getMotorCount'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='count'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_getPositionMax'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='__int64*' type='^q' name='max'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_getPositionMin'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='__int64*' type='^q' name='min'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_getStopped'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int*' type='^i' name='stoppedState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_getTargetPosition'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='__int64*' type='^q' name='position'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_getVelocity'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='velocity'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_getVelocityLimit'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='limit'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_getVelocityMax'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='max'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_getVelocityMin'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='min'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_setAcceleration'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double' type='d' name='acceleration'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_setCurrentLimit'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double' type='d' name='limit'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_setCurrentPosition'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='__int64' type='q' name='position'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_setEngaged'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int' type='i' name='engagedState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_setTargetPosition'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='__int64' type='q' name='position'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_setVelocityLimit'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double' type='d' name='limit'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_set_OnCurrentChange_Handler'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetStepperHandle, void *, int, double)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='double' type='d'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_set_OnInputChange_Handler'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetStepperHandle, void *, int, int)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='int' type='i'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_set_OnPositionChange_Handler'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetStepperHandle, void *, int, __int64)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='__int64' type='q'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetStepper_set_OnVelocityChange_Handler'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetStepperHandle, void *, int, double)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetStepperHandle' type='^{_CPhidgetStepper=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='double' type='d'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTemperatureSensor_create'>
+<arg declared_type='CPhidgetTemperatureSensorHandle*' type='^^{_CPhidgetTemperatureSensor}' name='phid'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTemperatureSensor_getAmbientTemperature'>
+<arg declared_type='CPhidgetTemperatureSensorHandle' type='^{_CPhidgetTemperatureSensor=}' name='phid'/>
+<arg declared_type='double*' type='^d' name='ambient'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTemperatureSensor_getAmbientTemperatureMax'>
+<arg declared_type='CPhidgetTemperatureSensorHandle' type='^{_CPhidgetTemperatureSensor=}' name='phid'/>
+<arg declared_type='double*' type='^d' name='max'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTemperatureSensor_getAmbientTemperatureMin'>
+<arg declared_type='CPhidgetTemperatureSensorHandle' type='^{_CPhidgetTemperatureSensor=}' name='phid'/>
+<arg declared_type='double*' type='^d' name='min'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTemperatureSensor_getPotential'>
+<arg declared_type='CPhidgetTemperatureSensorHandle' type='^{_CPhidgetTemperatureSensor=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='potential'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTemperatureSensor_getPotentialMax'>
+<arg declared_type='CPhidgetTemperatureSensorHandle' type='^{_CPhidgetTemperatureSensor=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='max'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTemperatureSensor_getPotentialMin'>
+<arg declared_type='CPhidgetTemperatureSensorHandle' type='^{_CPhidgetTemperatureSensor=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='min'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTemperatureSensor_getTemperature'>
+<arg declared_type='CPhidgetTemperatureSensorHandle' type='^{_CPhidgetTemperatureSensor=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='temperature'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTemperatureSensor_getTemperatureChangeTrigger'>
+<arg declared_type='CPhidgetTemperatureSensorHandle' type='^{_CPhidgetTemperatureSensor=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='trigger'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTemperatureSensor_getTemperatureInputCount'>
+<arg declared_type='CPhidgetTemperatureSensorHandle' type='^{_CPhidgetTemperatureSensor=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='count'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTemperatureSensor_getTemperatureMax'>
+<arg declared_type='CPhidgetTemperatureSensorHandle' type='^{_CPhidgetTemperatureSensor=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='max'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTemperatureSensor_getTemperatureMin'>
+<arg declared_type='CPhidgetTemperatureSensorHandle' type='^{_CPhidgetTemperatureSensor=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double*' type='^d' name='min'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTemperatureSensor_getThermocoupleType'>
+<arg declared_type='CPhidgetTemperatureSensorHandle' type='^{_CPhidgetTemperatureSensor=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='CPhidgetTemperatureSensor_ThermocoupleType*' type='^i' name='type'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTemperatureSensor_setTemperatureChangeTrigger'>
+<arg declared_type='CPhidgetTemperatureSensorHandle' type='^{_CPhidgetTemperatureSensor=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='double' type='d' name='trigger'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTemperatureSensor_setThermocoupleType'>
+<arg declared_type='CPhidgetTemperatureSensorHandle' type='^{_CPhidgetTemperatureSensor=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='CPhidgetTemperatureSensor_ThermocoupleType' type='i' name='type'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTemperatureSensor_set_OnTemperatureChange_Handler'>
+<arg declared_type='CPhidgetTemperatureSensorHandle' type='^{_CPhidgetTemperatureSensor=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetTemperatureSensorHandle, void *, int, double)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetTemperatureSensorHandle' type='^{_CPhidgetTemperatureSensor=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='double' type='d'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTextLCD_create'>
+<arg declared_type='CPhidgetTextLCDHandle*' type='^^{_CPhidgetTextLCD}' name='phid'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTextLCD_getBacklight'>
+<arg declared_type='CPhidgetTextLCDHandle' type='^{_CPhidgetTextLCD=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='backlightState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTextLCD_getBrightness'>
+<arg declared_type='CPhidgetTextLCDHandle' type='^{_CPhidgetTextLCD=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='brightness'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTextLCD_getColumnCount'>
+<arg declared_type='CPhidgetTextLCDHandle' type='^{_CPhidgetTextLCD=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='count'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTextLCD_getContrast'>
+<arg declared_type='CPhidgetTextLCDHandle' type='^{_CPhidgetTextLCD=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='contrast'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTextLCD_getCursorBlink'>
+<arg declared_type='CPhidgetTextLCDHandle' type='^{_CPhidgetTextLCD=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='cursorBlinkState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTextLCD_getCursorOn'>
+<arg declared_type='CPhidgetTextLCDHandle' type='^{_CPhidgetTextLCD=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='cursorState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTextLCD_getRowCount'>
+<arg declared_type='CPhidgetTextLCDHandle' type='^{_CPhidgetTextLCD=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='count'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTextLCD_getScreen'>
+<arg declared_type='CPhidgetTextLCDHandle' type='^{_CPhidgetTextLCD=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='screenIndex'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTextLCD_getScreenCount'>
+<arg declared_type='CPhidgetTextLCDHandle' type='^{_CPhidgetTextLCD=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='count'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTextLCD_getScreenSize'>
+<arg declared_type='CPhidgetTextLCDHandle' type='^{_CPhidgetTextLCD=}' name='phid'/>
+<arg declared_type='CPhidgetTextLCD_ScreenSize*' type='^i' name='screenSize'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTextLCD_initialize'>
+<arg declared_type='CPhidgetTextLCDHandle' type='^{_CPhidgetTextLCD=}' name='phid'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTextLCD_setBacklight'>
+<arg declared_type='CPhidgetTextLCDHandle' type='^{_CPhidgetTextLCD=}' name='phid'/>
+<arg declared_type='int' type='i' name='backlightState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTextLCD_setBrightness'>
+<arg declared_type='CPhidgetTextLCDHandle' type='^{_CPhidgetTextLCD=}' name='phid'/>
+<arg declared_type='int' type='i' name='brightness'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTextLCD_setContrast'>
+<arg declared_type='CPhidgetTextLCDHandle' type='^{_CPhidgetTextLCD=}' name='phid'/>
+<arg declared_type='int' type='i' name='contrast'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTextLCD_setCursorBlink'>
+<arg declared_type='CPhidgetTextLCDHandle' type='^{_CPhidgetTextLCD=}' name='phid'/>
+<arg declared_type='int' type='i' name='cursorBlinkState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTextLCD_setCursorOn'>
+<arg declared_type='CPhidgetTextLCDHandle' type='^{_CPhidgetTextLCD=}' name='phid'/>
+<arg declared_type='int' type='i' name='cursorState'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTextLCD_setCustomCharacter'>
+<arg declared_type='CPhidgetTextLCDHandle' type='^{_CPhidgetTextLCD=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int' type='i' name='var1'/>
+<arg declared_type='int' type='i' name='var2'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTextLCD_setDisplayCharacter'>
+<arg declared_type='CPhidgetTextLCDHandle' type='^{_CPhidgetTextLCD=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='int' type='i' name='column'/>
+<arg declared_type='unsigned char' type='C' name='character'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTextLCD_setDisplayString'>
+<arg declared_type='CPhidgetTextLCDHandle' type='^{_CPhidgetTextLCD=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='char*' type='*' name='displayString'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTextLCD_setScreen'>
+<arg declared_type='CPhidgetTextLCDHandle' type='^{_CPhidgetTextLCD=}' name='phid'/>
+<arg declared_type='int' type='i' name='screenIndex'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTextLCD_setScreenSize'>
+<arg declared_type='CPhidgetTextLCDHandle' type='^{_CPhidgetTextLCD=}' name='phid'/>
+<arg declared_type='CPhidgetTextLCD_ScreenSize' type='i' name='screenSize'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTextLED_create'>
+<arg declared_type='CPhidgetTextLEDHandle*' type='^^{_CPhidgetTextLED}' name='phid'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTextLED_getBrightness'>
+<arg declared_type='CPhidgetTextLEDHandle' type='^{_CPhidgetTextLED=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='brightness'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTextLED_getColumnCount'>
+<arg declared_type='CPhidgetTextLEDHandle' type='^{_CPhidgetTextLED=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='count'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTextLED_getRowCount'>
+<arg declared_type='CPhidgetTextLEDHandle' type='^{_CPhidgetTextLED=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='count'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTextLED_setBrightness'>
+<arg declared_type='CPhidgetTextLEDHandle' type='^{_CPhidgetTextLED=}' name='phid'/>
+<arg declared_type='int' type='i' name='brightness'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetTextLED_setDisplayString'>
+<arg declared_type='CPhidgetTextLEDHandle' type='^{_CPhidgetTextLED=}' name='phid'/>
+<arg declared_type='int' type='i' name='index'/>
+<arg declared_type='char*' type='*' name='displayString'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetWeightSensor_create'>
+<arg declared_type='CPhidgetWeightSensorHandle*' type='^^{_CPhidgetWeightSensor}' name='phid'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetWeightSensor_getWeight'>
+<arg declared_type='CPhidgetWeightSensorHandle' type='^{_CPhidgetWeightSensor=}' name='phid'/>
+<arg declared_type='double*' type='^d' name='weight'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetWeightSensor_getWeightChangeTrigger'>
+<arg declared_type='CPhidgetWeightSensorHandle' type='^{_CPhidgetWeightSensor=}' name='phid'/>
+<arg declared_type='double*' type='^d' name='trigger'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetWeightSensor_setWeightChangeTrigger'>
+<arg declared_type='CPhidgetWeightSensorHandle' type='^{_CPhidgetWeightSensor=}' name='phid'/>
+<arg declared_type='double' type='d' name='trigger'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidgetWeightSensor_set_OnWeightChange_Handler'>
+<arg declared_type='CPhidgetWeightSensorHandle' type='^{_CPhidgetWeightSensor=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetWeightSensorHandle, void *, double)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetWeightSensorHandle' type='^{_CPhidgetWeightSensor=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='double' type='d'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_close'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}' name='phid'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_delete'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}' name='phid'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_disableLogging'>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_enableLogging'>
+<arg declared_type='CPhidgetLog_level' type='i' name='level'/>
+<arg declared_type='char*' const='true' type='*' name='outputFile'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_getDeviceClass'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}' name='phid'/>
+<arg declared_type='CPhidget_DeviceClass*' type='^i' name='deviceClass'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_getDeviceID'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}' name='phid'/>
+<arg declared_type='CPhidget_DeviceID*' type='^i' name='deviceID'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_getDeviceLabel'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}' name='phid'/>
+<arg declared_type='char**' const='true' type='^*' name='deviceLabel'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_getDeviceName'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}' name='phid'/>
+<arg declared_type='char**' const='true' type='^*' name='deviceName'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_getDeviceStatus'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='deviceStatus'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_getDeviceType'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}' name='phid'/>
+<arg declared_type='char**' const='true' type='^*' name='deviceType'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_getDeviceVersion'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='deviceVersion'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_getErrorDescription'>
+<arg declared_type='int' type='i' name='errorCode'/>
+<arg declared_type='char**' const='true' type='^*' name='errorString'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_getLibraryVersion'>
+<arg declared_type='char**' const='true' type='^*' name='libraryVersion'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_getSerialNumber'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='serialNumber'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_getServerAddress'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}' name='phid'/>
+<arg declared_type='char**' const='true' type='^*' name='address'/>
+<arg declared_type='int*' type='^i' name='port'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_getServerID'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}' name='phid'/>
+<arg declared_type='char**' const='true' type='^*' name='serverID'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_getServerStatus'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}' name='phid'/>
+<arg declared_type='int*' type='^i' name='serverStatus'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function variadic='true' name='CPhidget_log'>
+<arg declared_type='CPhidgetLog_level' type='i' name='level'/>
+<arg declared_type='char*' const='true' type='*' name='id'/>
+<arg declared_type='char*' const='true' type='*' name='message'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_open'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}' name='phid'/>
+<arg declared_type='int' type='i' name='serialNumber'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_openLabel'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}' name='phid'/>
+<arg declared_type='char*' const='true' type='*' name='label'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_openLabelRemote'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}' name='phid'/>
+<arg declared_type='char*' const='true' type='*' name='label'/>
+<arg declared_type='char*' const='true' type='*' name='serverID'/>
+<arg declared_type='char*' const='true' type='*' name='password'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_openLabelRemoteIP'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}' name='phid'/>
+<arg declared_type='char*' const='true' type='*' name='label'/>
+<arg declared_type='char*' const='true' type='*' name='address'/>
+<arg declared_type='int' type='i' name='port'/>
+<arg declared_type='char*' const='true' type='*' name='password'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_openRemote'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}' name='phid'/>
+<arg declared_type='int' type='i' name='serial'/>
+<arg declared_type='char*' const='true' type='*' name='serverID'/>
+<arg declared_type='char*' const='true' type='*' name='password'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_openRemoteIP'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}' name='phid'/>
+<arg declared_type='int' type='i' name='serial'/>
+<arg declared_type='char*' const='true' type='*' name='address'/>
+<arg declared_type='int' type='i' name='port'/>
+<arg declared_type='char*' const='true' type='*' name='password'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_setDeviceLabel'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}' name='phid'/>
+<arg declared_type='char*' const='true' type='*' name='deviceLabel'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_set_OnAttach_Handler'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetHandle, void *)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}'/>
+<arg declared_type='void*' type='^v'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_set_OnDetach_Handler'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetHandle, void *)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}'/>
+<arg declared_type='void*' type='^v'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_set_OnError_Handler'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetHandle, void *, int, char *)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}'/>
+<arg declared_type='void*' type='^v'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='char*' const='true' type='*'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_set_OnServerConnect_Handler'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetHandle, void *)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}'/>
+<arg declared_type='void*' type='^v'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_set_OnServerDisconnect_Handler'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}' name='phid'/>
+<arg declared_type='int (*)(CPhidgetHandle, void *)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}'/>
+<arg declared_type='void*' type='^v'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_set_OnWakeup_Handler'>
+<arg declared_type='int (*)(void *)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='void*' type='^v'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_set_OnWillSleep_Handler'>
+<arg declared_type='int (*)(void *)' type='^?' function_pointer='true' name='fptr'>
+<arg declared_type='void*' type='^v'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' type='^v' name='userPtr'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='CPhidget_waitForAttachment'>
+<arg declared_type='CPhidgetHandle' type='^{_CPhidget=}' name='phid'/>
+<arg declared_type='int' type='i' name='milliseconds'/>
+<retval declared_type='int' type='i'/>
+</function>
+</signatures>
