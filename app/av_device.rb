@@ -77,10 +77,10 @@ class AVDevice
 
     when "HTTP"
       NSLog "sending HTTP command now.. #{command} to #{self.ip_address}:#{self.port}"
-      mp "http://#{self.ip_address}:#{self.port}/exe.cgi?cmd=#{command}"
+      mp "http://#{self.ip_address}:#{self.port}#{command}"
 
       if NSThread.isMainThread
-        AFMotion::HTTP.get("http://#{self.ip_address}:#{self.port}/exe.cgi?cmd=#{command}") do |result|
+        AFMotion::HTTP.get("http://#{self.ip_address}:#{self.port}#{command}") do |result|
           if result.success?
             NSLog "http get command #{command} succeded to send to #{self.ip_address}:#{self.port}"
           elsif result.failure?
@@ -89,7 +89,7 @@ class AVDevice
         end
       else
         Dispatch::Queue.main.sync do
-          AFMotion::HTTP.get("http://#{self.ip_address}:#{self.port}/exe.cgi?cmd=#{command}") do |result|
+          AFMotion::HTTP.get("http://#{self.ip_address}:#{self.port}#{command}") do |result|
             if result.success?
               NSLog "http get command #{command} succeded to send to #{self.ip_address}:#{self.port}"
             elsif result.failure?
@@ -108,6 +108,22 @@ class AVDevice
       else
         Dispatch::Queue.main.sync do
           AFMotion::HTTP.get(command) do |result|
+            p result
+          end
+        end
+      end
+      
+    when "HTTP-GET-AUTH"
+      NSLog "Sending raw http get request now... #{command} to #{self.ip_address}"
+      if NSThread.isMainThread
+        AFMotion::HTTP.get("http://#{self.ip_address}/#{command}") do |result|
+          mp "This is the result - #{result}"
+          p result
+        end
+      else
+        Dispatch::Queue.main.sync do
+          AFMotion::HTTP.get("http://#{self.ip_address}/#{command}") do |result|
+            mp "This is the result - #{result}"
             p result
           end
         end

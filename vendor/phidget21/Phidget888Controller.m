@@ -134,7 +134,7 @@ int gotIFKitError(CPhidgetHandle phid, void *context, int errcode, const char *e
 
 - (void)setOutput:(int) ind toState:(int) state;
 {
-	// NSLog(@"From C - output %d at %d\n",ind, state);f 2000
+	 NSLog(@"From C - output %d at %d\n",ind, state);//f 2000
 	
 	
 	CPhidgetInterfaceKit_setOutputState(ifkit, ind, state);

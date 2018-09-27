@@ -16,7 +16,7 @@ Motion::Project::App.setup do |app|
   app.version = '1.0'
   app.identifier = 'com.eoslightmedia.EosAvalanche'
   
-  app.embedded_frameworks += ['/Library/Frameworks/Phidget22.framework', '/Library/Frameworks/Phidget21.framework']
+  app.embedded_frameworks += [ '/Library/Frameworks/Phidget21.framework']
   app.bridgesupport_files << 'resources/phidget21.bridgesupport' 
   app.vendor_project('./vendor/phidget21', :static)
   app.info_plist['NSAppTransportSecurity'] = { 'NSAllowsArbitraryLoads' => true }

@@ -9,7 +9,9 @@ class AppDelegate
     buildWindow
     setup_notifications
     setup_phidget
-    process_sensor(notification)
+    # sleep(1)
+    # process_sensor(notification)
+    # avalancheTrigger
   end
 
   def buildWindow
@@ -29,10 +31,16 @@ class AppDelegate
   end
   
   def setup_phidget
-    @analog_1 = PhidgetAnalogController.new
-    @analog_1.createAnalog(App::Persistence['analog_1_id'])
-    @phi = Phidget888Controller.new
-    @phi.createInterfaceKit(App::Persistence['phidget_id'])
+    # @analog_1 = PhidgetAnalogController.new
+#     @analog_1.createAnalog(App::Persistence['analog_1_id'])
+    @phidget = Phidget888Controller.new
+    @phidget.createInterfaceKit(App::Persistence['phidget_id'])
+     App.run_after(3){
+    #@phidget.setOutput(2, toState: 1)
+    #@phidget.setOutput(5, toState: 1)
+     mp 'here'
+     
+     }
   end
   
   #Do something with the sensor notification
@@ -45,37 +53,48 @@ class AppDelegate
     end   
 	end
   
+  def on
+    @phidget.setOutput(2, toState: 1)
+    @phidget.setOutput(5, toState: 1)
+  end
+  
+  def off
+    @phidget.setOutput(2, toState: 0)
+    @phidget.setOutput(5, toState: 0)
+  end
+  
+  
   def avalancheTrigger
     mp 'Avalanching'
-    @phi.setOutput(2, toState: 1)
-    @phi.setOutput(5, toState: 1)
-    sleep(3)
-    @phi.setOutput(2, toState: 0)
-    @phi.setOutput(5, toState: 0)
+    #TODO Add in apple script to playback an audiofile 
+   ##@phidget.setOutput(2, toState: 1)
+   #mp'outputs ON!'
+   #sleep(0.5)
+   #mp 'outputs going OFF!'
+   ##@phidget.setOutput(2, toState: 0)
+    relay1pulse
     sleep(10)
     relay1pulse
-    #sleep(10)
-    #relay1pulse
-    #sleep(10)
-    #relay1pulse
-    #sleep(10)
-    #relay1pulse
-    #sleep(10)
-    #relay1pulse
-    #sleep(10)
-    #relay1pulse
-    #sleep(10)
-    #relay1pulse
-    #sleep(10)
-    #relay1pulse
-    #sleep(10)
-    #relay1pulse
-    #sleep(10)
-    #relay1pulse
-    #sleep(10)
-    #relay1pulse
-    #sleep(10)
-    #relay1pulse
+    sleep(10)
+    relay1pulse
+    sleep(10)
+    relay1pulse
+    sleep(10)
+    relay1pulse
+    sleep(10)
+    relay1pulse
+    sleep(10)
+    relay1pulse
+    sleep(10)
+    relay1pulse
+    sleep(10)
+    relay1pulse
+    sleep(10)
+    relay1pulse
+    sleep(10)
+    relay1pulse
+    sleep(10)
+    relay1pulse
   end
   
   def relay1pulse
@@ -107,7 +126,7 @@ class AppDelegate
     mp "Phidget #{value["serial"]} attached!"
     # sleep(1) #wait for the phidget to get ready to accept calls. May not need this.
     @phidget_attached = true #this is useful so you dont' write to a phidget which isn't there
-    setup_analog(@analog_1)
+    # setup_analog(@analog_1)
 	end  
   
 	def process_detach(notification)
