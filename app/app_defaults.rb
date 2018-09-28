@@ -8,7 +8,7 @@ class AppDefaults
       App::Persistence['port']                              ||= 80
       App::Persistence['analog_1_id']                       ||= -1
       App::Persistence['analog_2_id']                       ||= -1
-      App::Persistence["path_to_audio"]                     ||= '~/track_1.mp3'
+      App::Persistence["path_to_audio"]                       = File.expand_path("~/HighStreet Christmas Mix 2018 V3.mp3")
       App::Persistence["debug"]                             ||= false
       mp 'set defaults'
       mp App::Persistence.all

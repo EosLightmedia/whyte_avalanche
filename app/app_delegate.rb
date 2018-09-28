@@ -7,12 +7,15 @@ class AppDelegate
     AppDefaults.load_defaults
     buildMenu
     buildWindow
-    #setup_notifications
-    #setup_phidget
-    play_audio
+    setup_audio
+    sleep 2
+    setup_notifications
+    setup_phidget
+    # play_audio
     # sleep(1)
     # process_sensor(notification)
     # avalancheTrigger
+    # play
   end
 
   def buildWindow
@@ -50,7 +53,11 @@ class AppDelegate
     mp "sensor value is #{value}__serial is #{value['serial']}_____________"
     if value["value"] >=5
       mp "motion sensed - triggering lights"
+      if @Player.isPlaying
+        mp 'cant start audio still playing'
+      else
       avalancheTrigger
+      end
     end   
 	end
   
@@ -64,20 +71,49 @@ class AppDelegate
     @phidget.setOutput(5, toState: 0)
   end
   
-
-  def play_audio
-    audio_url = NSURL.fileURLWithPath('~/track_1.mp3')
-    player = AVPlayer.playerWithURL(audio_url)
-    #player = AVAudioPlayer.alloc.initWithContentsOfURL(audio_url,  error: nil)
-    mp 'starting audio'
-    player.play()
-    mp "#{player.play()}"
+  def setup_audio
+    url = NSURL.fileURLWithPath App::Persistence["path_to_audio"]
+    @Player = AVAudioPlayer.alloc.initWithContentsOfURL(url,  error: nil)
+    # mp @Player.deviceCurrentTime
+# <<<<<<< Updated upstream
+#     # mp @audioPlayer.numberOfChannels
+#     @audioPlayer.setNumberOfLoops(100000)
+# =======
+#     if App::Persistence["loop"]
+#       @audioPlayer.setNumberOfLoops 100000
+#     else
+#       @audioPlayer.setNumberOfLoops 0
+#     end
+# >>>>>>> Stashed changes
+    @Player.prepareToPlay
   end
+  
+  def play
+    url = NSURL.fileURLWithPath App::Persistence["path_to_audio"]
+    mp @Player.isPlaying
+    if @Player.isPlaying
+      @Player.stop
+      @Player = AVAudioPlayer.alloc.initWithContentsOfURL(url,  error: nil)
+      @Player.play
+    else
+      @Player.play
+    end
+    mp "audio playing"
+    # @status_item.setImage(NSImage.imageNamed("play-small"))
+  end
+  
+  # def play_audio
+  #   audio_url = NSURL.fileURLWithPath(App::Persistence["path_to_audio"])
+  #   mp "#{App::Persistence["path_to_audio"]}"
+  #   player = AVPlayer.playerWithURL(audio_url)
+  #   mp 'starting audio'
+  #   player.play()
+  # end
   
   def avalancheTrigger
     mp 'Avalanching'
     #TODO ADD IN COMMAND TO PLAY AN AUDIO FILE FROM A MAC MINI
-    #play_audio
+    play
     relay1pulse
     sleep(10)
     relay1pulse
