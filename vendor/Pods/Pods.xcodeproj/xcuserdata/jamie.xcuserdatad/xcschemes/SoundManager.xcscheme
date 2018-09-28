@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D5142D1E4AFE0FBE43C91BD52F1A3312"
-               BlueprintName = "CocoaAsyncSocket"
+               BlueprintIdentifier = "9C37663BD52F463F5CB9CF02FCB71BD8"
+               BlueprintName = "SoundManager"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libCocoaAsyncSocket.a">
+               BuildableName = "libSoundManager.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

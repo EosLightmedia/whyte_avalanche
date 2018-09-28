@@ -7,8 +7,9 @@ class AppDelegate
     AppDefaults.load_defaults
     buildMenu
     buildWindow
-    setup_notifications
-    setup_phidget
+    #setup_notifications
+    #setup_phidget
+    play_audio
     # sleep(1)
     # process_sensor(notification)
     # avalancheTrigger
@@ -63,15 +64,20 @@ class AppDelegate
     @phidget.setOutput(5, toState: 0)
   end
   
+
+  def play_audio
+    audio_url = NSURL.fileURLWithPath('~/track_1.mp3')
+    player = AVPlayer.playerWithURL(audio_url)
+    #player = AVAudioPlayer.alloc.initWithContentsOfURL(audio_url,  error: nil)
+    mp 'starting audio'
+    player.play()
+    mp "#{player.play()}"
+  end
   
   def avalancheTrigger
     mp 'Avalanching'
-    #TODO Add in apple script to playback an audiofile 
-   ##@phidget.setOutput(2, toState: 1)
-   #mp'outputs ON!'
-   #sleep(0.5)
-   #mp 'outputs going OFF!'
-   ##@phidget.setOutput(2, toState: 0)
+    #TODO ADD IN COMMAND TO PLAY AN AUDIO FILE FROM A MAC MINI
+    #play_audio
     relay1pulse
     sleep(10)
     relay1pulse
